@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>learningDiary - 1&nbsp; Week1 - Introduction of RS</title>
+<title>learningDiary - 4&nbsp; Week7 - Classification-I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wk2_Portfolio.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./wk9_SAR_data.html" rel="next">
+<link href="./wk5_GEE.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week1 - Introduction of RS</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk7_classification1.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week1 - Introduction of RS</span></span></a>
   </div>
 </li>
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wk7_classification1.html" class="sidebar-item-text sidebar-link">
+  <a href="./wk7_classification1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></span></a>
   </div>
 </li>
@@ -157,7 +157,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#beginning" id="toc-beginning" class="nav-link active" data-scroll-target="#beginning"><span class="header-section-number">1.1</span> Beginning</a></li>
+  <li><a href="#overfiting" id="toc-overfiting" class="nav-link active" data-scroll-target="#overfiting"><span class="header-section-number">4.1</span> Overfiting</a></li>
+  <li><a href="#random-forest" id="toc-random-forest" class="nav-link" data-scroll-target="#random-forest"><span class="header-section-number">4.2</span> Random Forest</a></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week1 - Introduction of RS</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></h1>
 </div>
 
 
@@ -181,31 +182,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="beginning" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="beginning"><span class="header-section-number">1.1</span> Beginning</h2>
+<section id="overfiting" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="overfiting"><span class="header-section-number">4.1</span> Overfiting</h2>
 <ul>
-<li><p><strong>文档目的</strong>：介绍远程感知的基本概念和应用</p></li>
-<li><p><strong>文档内容</strong>：</p>
+<li>Tree score = SSR + tree penalty (alpha) * T (number of leaves)</li>
+</ul>
+<p>对于Tree score公式，为啥去掉越多leaf, alpha越大？</p>
+<p>在决策树的剪枝过程中，我们使用一个参数称为<strong>ccp_alpha</strong>（cost complexity parameter）来控制剪枝的程度。这个参数的值越大，意味着我们更倾向于剪掉更多的叶节点，从而简化树的结构。</p>
+<p>让我们来理解一下为什么去掉越多的叶节点，<strong>ccp_alpha</strong> 就越大：</p>
+<ol type="1">
+<li><p><strong>基尼杂质和树的复杂度</strong>：</p>
 <ul>
-<li><p>远程感知的定义、分类和平台</p></li>
-<li><p>电磁波与地球表面的相互作用</p></li>
-<li><p>远程感知数据的四个分辨率：空间、光谱、时间和辐射</p></li>
-<li><p>远程感知数据的格式、选择和限制</p></li>
-<li><p>远程感知数据的实际案例和分析方法</p></li>
+<li><p>基尼杂质是用来衡量数据集纯度的指标，它越小表示数据集的纯度越高。</p></li>
+<li><p>在剪枝过程中，我们希望保留那些对模型性能有积极影响的叶节点，同时减少模型的复杂度。</p></li>
+<li><p>当我们去掉一个叶节点时，基尼杂质会增加，因为我们丧失了这个叶节点的纯度。</p></li>
 </ul></li>
-</ul>
-<p>主要介绍了如何使用遥感数据进行基本的图像分析和处理。这网页内容的大纲如下：</p>
-<ul>
-<li><p><strong>1.1 学习目标</strong>：列出了本节实验的主要目标，包括获取、加载和区分Landsat和Sentinel数据，进行基本的栅格图像统计和处理，评估使用不同软件的优缺点，提取和比较光谱特征等。</p></li>
-<li><p><strong>1.2 资源</strong>：提供了本节实验所需的一些参考资料和链接，包括遥感原理、电磁波谱和遥感传感器的介绍，以及一些相关的网站和视频。</p></li>
-<li><p><strong>1.3 EO dashboard</strong>：介绍了一个展示地球观测数据的网站，要求学生花5分钟浏览并了解一些遥感数据的应用。</p></li>
-<li><p><strong>1.4 .gitignore</strong>：介绍了如何使用.gitignore文件来忽略一些大型数据文件，避免在使用Git和GitHub时出现错误或问题。</p></li>
-<li><p><strong>1.4.1 Sentinel下载</strong>：介绍了如何从Copernicus Open Access Hub网站上下载Sentinel-2 L2A数据，以及如何在QGIS中打开和探索数据，包括创建真彩色合成图像，提取光谱特征，制作栅格堆叠等。</p></li>
-<li><p><strong>1.4.1.2 SNAP</strong>：介绍了一个专门用于预处理和分析遥感数据的工具箱，以及如何在SNAP中加载、显示、统计和变换数据，包括创建假彩色合成图像，绘制散点图，进行帽子变换等。</p></li>
-<li><p><strong>1.4.1.2.7 Masking and resampling</strong>：介绍了如何使用矢量数据来裁剪和重采样栅格数据，以便只分析感兴趣的区域和波段。</p></li>
-<li><p><strong>1.4.2 Landsat</strong>：介绍了如何从EarthExplorer网站上下载Landsat 8-9 OLI/TIRS C2 L2数据，以及如何在SNAP中与Sentinel数据进行比较，包括选择感兴趣的点，提取光谱特征，绘制光谱曲线等。</p></li>
-<li><p><strong>1.4.3 Spectral signatures</strong>：介绍了如何使用R语言来处理和分析遥感数据，包括加载、裁剪、重采样、提取、汇总、绘图等操作，以及如何比较不同传感器和不同地物的光谱特征</p></li>
-</ul>
+<li><p><strong>成本复杂度</strong>：</p></li>
+</ol>
+<p><strong>ccp_alpha</strong> 是一个成本复杂度参数，它在剪枝过程中平衡了模型的拟合程度和复杂度。</p>
+<p>当我们增大 <strong>ccp_alpha</strong> 时，模型更倾向于剪掉更多的叶节点，从而减少模型的复杂度。</p>
+<p>这样做的目的是防止过拟合，提高模型的泛化能力。</p>
+<p>Youtube video</p>
+<p><a href="https://www.youtube.com/watch?v=D0efHEJsfHo&amp;t=684s" title="How to Prune Regression Trees">How to Prune Regression Trees</a></p>
+</section>
+<section id="random-forest" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="random-forest"><span class="header-section-number">4.2</span> Random Forest</h2>
 
 
 </section>
@@ -446,13 +447,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About me</span>
+      <a href="./wk5_GEE.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week5 - Google Earth Engine</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wk2_Portfolio.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Presentation Ninja</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wk9_SAR_data.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - SAR Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

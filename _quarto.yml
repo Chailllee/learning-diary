@@ -3,11 +3,15 @@ project:
 
 book:
   title: "learningDiary"
-  author: "Norah Jones"
+  author: "Xiaoyi Chens"
   date: "2024/1/18"
   chapters:
     - index.qmd
     - intro.qmd
+    - wk2_Portfolio.Rmd
+    - wk5_GEE.qmd
+    - wk7_classification1.qmd
+    - wk9_SAR_data.qmd
     - summary.qmd
     - references.qmd
 
@@ -16,6 +20,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    darkmode: true
   pdf:
     documentclass: scrreprt
 

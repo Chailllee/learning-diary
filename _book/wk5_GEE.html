@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>learningDiary - 1&nbsp; Week1 - Introduction of RS</title>
+<title>learningDiary - 3&nbsp; Week5 - Google Earth Engine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wk2_Portfolio.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./wk7_classification1.html" rel="next">
+<link href="./wk2_Portfolio.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week1 - Introduction of RS</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk5_GEE.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week5 - Google Earth Engine</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week1 - Introduction of RS</span></span></a>
   </div>
 </li>
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wk5_GEE.html" class="sidebar-item-text sidebar-link">
+  <a href="./wk5_GEE.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week5 - Google Earth Engine</span></span></a>
   </div>
 </li>
@@ -157,7 +157,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#beginning" id="toc-beginning" class="nav-link active" data-scroll-target="#beginning"><span class="header-section-number">1.1</span> Beginning</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
+  <li><a href="#whats-gee" id="toc-whats-gee" class="nav-link" data-scroll-target="#whats-gee"><span class="header-section-number">3.2</span> What’s GEE</a></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week1 - Introduction of RS</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week5 - Google Earth Engine</span></h1>
 </div>
 
 
@@ -181,31 +182,23 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="beginning" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="beginning"><span class="header-section-number">1.1</span> Beginning</h2>
+<p>本周得知<strong>CASA0025: Building Spatial Applications with Big Data</strong> 这门课和我们RS的教学内容开始有交集的部分，我觉得两位主讲老师的教学合作打破了两个学科之间的壁垒，从彼此的课程的知识进行互相补充是很有意义的。</p>
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<p>课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。</p>
 <ul>
-<li><p><strong>文档目的</strong>：介绍远程感知的基本概念和应用</p></li>
-<li><p><strong>文档内容</strong>：</p>
-<ul>
-<li><p>远程感知的定义、分类和平台</p></li>
-<li><p>电磁波与地球表面的相互作用</p></li>
-<li><p>远程感知数据的四个分辨率：空间、光谱、时间和辐射</p></li>
-<li><p>远程感知数据的格式、选择和限制</p></li>
-<li><p>远程感知数据的实际案例和分析方法</p></li>
-</ul></li>
+<li><p><strong>GEE 的特点</strong>：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。</p></li>
+<li><p><strong>GEE 的数据结构</strong>：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。</p></li>
+<li><p><strong>GEE 的操作方法</strong>：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。</p></li>
 </ul>
-<p>主要介绍了如何使用遥感数据进行基本的图像分析和处理。这网页内容的大纲如下：</p>
+<p>课程实践练习部分中可以了解到：</p>
 <ul>
-<li><p><strong>1.1 学习目标</strong>：列出了本节实验的主要目标，包括获取、加载和区分Landsat和Sentinel数据，进行基本的栅格图像统计和处理，评估使用不同软件的优缺点，提取和比较光谱特征等。</p></li>
-<li><p><strong>1.2 资源</strong>：提供了本节实验所需的一些参考资料和链接，包括遥感原理、电磁波谱和遥感传感器的介绍，以及一些相关的网站和视频。</p></li>
-<li><p><strong>1.3 EO dashboard</strong>：介绍了一个展示地球观测数据的网站，要求学生花5分钟浏览并了解一些遥感数据的应用。</p></li>
-<li><p><strong>1.4 .gitignore</strong>：介绍了如何使用.gitignore文件来忽略一些大型数据文件，避免在使用Git和GitHub时出现错误或问题。</p></li>
-<li><p><strong>1.4.1 Sentinel下载</strong>：介绍了如何从Copernicus Open Access Hub网站上下载Sentinel-2 L2A数据，以及如何在QGIS中打开和探索数据，包括创建真彩色合成图像，提取光谱特征，制作栅格堆叠等。</p></li>
-<li><p><strong>1.4.1.2 SNAP</strong>：介绍了一个专门用于预处理和分析遥感数据的工具箱，以及如何在SNAP中加载、显示、统计和变换数据，包括创建假彩色合成图像，绘制散点图，进行帽子变换等。</p></li>
-<li><p><strong>1.4.1.2.7 Masking and resampling</strong>：介绍了如何使用矢量数据来裁剪和重采样栅格数据，以便只分析感兴趣的区域和波段。</p></li>
-<li><p><strong>1.4.2 Landsat</strong>：介绍了如何从EarthExplorer网站上下载Landsat 8-9 OLI/TIRS C2 L2数据，以及如何在SNAP中与Sentinel数据进行比较，包括选择感兴趣的点，提取光谱特征，绘制光谱曲线等。</p></li>
-<li><p><strong>1.4.3 Spectral signatures</strong>：介绍了如何使用R语言来处理和分析遥感数据，包括加载、裁剪、重采样、提取、汇总、绘图等操作，以及如何比较不同传感器和不同地物的光谱特征</p></li>
+<li><p><strong>高级像素级图像变换</strong>：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。</p></li>
+<li><p><strong>GEE应用程序和数据目录</strong>：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。</p></li>
 </ul>
+</section>
+<section id="whats-gee" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="whats-gee"><span class="header-section-number">3.2</span> What’s GEE</h2>
 
 
 </section>
@@ -446,13 +439,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About me</span>
+      <a href="./wk2_Portfolio.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Presentation Ninja</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wk2_Portfolio.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Presentation Ninja</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wk7_classification1.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
