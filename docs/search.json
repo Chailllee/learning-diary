@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "wk9_SAR_data.html#abstract",
-    "href": "wk9_SAR_data.html#abstract",
-    "title": "5  Week9 - SAR Data",
-    "section": "5.1 Abstract",
-    "text": "5.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "learningDiary",
+    "section": "",
+    "text": "About me\nTell you later :)\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
   {
     "objectID": "intro.html#beginning",
@@ -47,6 +47,13 @@
     "title": "4  Week7 - Classification-I",
     "section": "4.2 Random Forest",
     "text": "4.2 Random Forest"
+  },
+  {
+    "objectID": "wk9_SAR_data.html#abstract",
+    "href": "wk9_SAR_data.html#abstract",
+    "title": "5  Week9 - SAR Data",
+    "section": "5.1 Abstract",
+    "text": "5.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
   },
   {
     "objectID": "summary.html",
