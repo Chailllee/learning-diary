@@ -1,37 +1,70 @@
-# Week1 - Introduction of RS
+---
+title: "Week1 - Introduction of RS"
+---
 
 ## Beginning
 
--   **文档目的**：介绍远程感知的基本概念和应用
+**在开始这门课之前，我需要首先了解这一课程的目的，**是介绍远程感知的基本概念和应用，并且**通过RS这门课，我们即将学习到的内容**包括：
 
--   **文档内容**：
+-   远程感知的定义、分类和平台
 
-    -   远程感知的定义、分类和平台
+-   电磁波与地球表面的相互作用
 
-    -   电磁波与地球表面的相互作用
+-   远程感知数据的四个分辨率：空间、光谱、时间和辐射
 
-    -   远程感知数据的四个分辨率：空间、光谱、时间和辐射
+-   远程感知数据的格式、选择和限制
 
-    -   远程感知数据的格式、选择和限制
+-   远程感知数据的实际案例和分析方法
 
-    -   远程感知数据的实际案例和分析方法
+这很容易让我联想到我过去本科期间自学到的RS的基础概念，我相信这门课不仅能帮助我温习过去的知识，还能充分补充其他的知识。
 
-主要介绍了如何使用遥感数据进行基本的图像分析和处理。这网页内容的大纲如下：
+## Summary of week 1 class
 
--   **1.1 学习目标**：列出了本节实验的主要目标，包括获取、加载和区分Landsat和Sentinel数据，进行基本的栅格图像统计和处理，评估使用不同软件的优缺点，提取和比较光谱特征等。
+-   **远程感知城市和环境**：这是一门介绍远程感知基本原理和应用的课程，主要关注城市和环境问题。
 
--   **1.2 资源**：提供了本节实验所需的一些参考资料和链接，包括遥感原理、电磁波谱和遥感传感器的介绍，以及一些相关的网站和视频。
+-   **远程感知的类型和原理**：远程感知分为主动和被动两种，根据是否有自身的能源发射器。远程感知数据受到电磁波与大气和地表的相互作用的影响，需要进行校正和处理。
 
--   **1.3 EO dashboard**：介绍了一个展示地球观测数据的网站，要求学生花5分钟浏览并了解一些遥感数据的应用。
+-   **远程感知数据的格式和分辨率**：远程感知数据通常是栅格数据，有不同的存储格式和组织方式。远程感知数据的质量和应用受到空间、光谱、时间和辐射分辨率的制约。
 
--   **1.4 .gitignore**：介绍了如何使用.gitignore文件来忽略一些大型数据文件，避免在使用Git和GitHub时出现错误或问题。
+-   [Module housekeeping (locations, timings etc)^5^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C4%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Module%20hou...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A4%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A4%2C%22highlightText%22%3A%22Module%20housekeeping%20(locations%2C%22%2C%22snippets%22%3A%5B%5D%7D%7D)
 
--   **1.4.1 Sentinel下载**：介绍了如何从Copernicus Open Access Hub网站上下载Sentinel-2 L2A数据，以及如何在QGIS中打开和探索数据，包括创建真彩色合成图像，提取光谱特征，制作栅格堆叠等。
+-   
 
--   **1.4.1.2 SNAP**：介绍了一个专门用于预处理和分析遥感数据的工具箱，以及如何在SNAP中加载、显示、统计和变换数据，包括创建假彩色合成图像，绘制散点图，进行帽子变换等。
+-   [Module aims + objectives^6^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C5%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Module%20aim...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A4%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A6%2C%22highlightText%22%3A%22Module%20aims%20%2B%20objectives%22%2C%22snippets%22%3A%5B%5D%7D%7D)
 
--   **1.4.1.2.7 Masking and resampling**：介绍了如何使用矢量数据来裁剪和重采样栅格数据，以便只分析感兴趣的区域和波段。
+-   
 
--   **1.4.2 Landsat**：介绍了如何从EarthExplorer网站上下载Landsat 8-9 OLI/TIRS C2 L2数据，以及如何在SNAP中与Sentinel数据进行比较，包括选择感兴趣的点，提取光谱特征，绘制光谱曲线等。
+-   Module assessment
 
--   **1.4.3 Spectral signatures**：介绍了如何使用R语言来处理和分析遥感数据，包括加载、裁剪、重采样、提取、汇总、绘图等操作，以及如何比较不同传感器和不同地物的光谱特征
+-   
+
+-   [Introduction to remote sensing^3^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C2%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Introducti...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A4%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A8%2C%22highlightText%22%3A%22Introduction%20to%20remote%20sensing%22%2C%22snippets%22%3A%5B%5D%7D%7D)^[2](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C1%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Lecture%201%3A...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A1%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A2%2C%22highlightText%22%3A%22Lecture%201%3A%20An%20Introduction%20to%20Remote%20Sensing%22%2C%22snippets%22%3A%5B%5D%7D%7D)^
+
+-   
+
+-   Questions
+
+Practical
+
+-   
+
+-   
+
+```{=html}
+<!-- -->
+```
+-   
+
+-   [Loading Landsat and Sentinel data^7^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C6%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Loading%20La...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A61%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A2%2C%22highlightText%22%3A%22Loading%20Landsat%20and%20Sentinel%20data%22%2C%22snippets%22%3A%5B%5D%7D%7D)
+
+-   
+
+-   [Exploring SNAP and R^8^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C7%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Exploring%20...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A61%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A3%2C%22highlightText%22%3A%22Exploring%20SNAP%20and%20R%22%2C%22snippets%22%3A%5B%5D%7D%7D)
+
+-   
+
+-   [Selecting regions of interest^9^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C8%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Selecting%20...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A61%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A4%2C%22highlightText%22%3A%22Selecting%20regions%20of%20interest%22%2C%22snippets%22%3A%5B%5D%7D%7D)
+
+-   
+
+-   [Plotting spectral signatures^10^](https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelbeta,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=f9924b4ffaf0774b07b05369f13bbff3394eea42&setlang=zh-CN&darkschemeovr=1#sjevt%7CDiscover.Chat.SydneyClickPageCitation%7Cadpclick%7C9%7C48d7c5f0-85b2-49d1-8d84-afc2ab6ec7ad%7C%7B%22sourceAttributions%22%3A%7B%22providerDisplayName%22%3A%22Plotting%20s...%22%2C%22pageType%22%3A%22pdf%22%2C%22pageIndex%22%3A61%2C%22relatedPageUrl%22%3A%22file%253A%252F%252F%252FD%253A%252FFile_auto%252F0_UCL_CASA%252FTerm2%252Fcasa0023_RS%252Flecture_slide%252FLecture1_Intro.pdf%22%2C%22lineIndex%22%3A5%2C%22highlightText%22%3A%22Plotting%20spectral%20signatures%22%2C%22snippets%22%3A%5B%5D%7D%7D)
