@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -159,10 +178,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#beginning" id="toc-beginning" class="nav-link active" data-scroll-target="#beginning"><span class="header-section-number">1.1</span> Beginning</a></li>
   <li><a href="#summary-of-this-class" id="toc-summary-of-this-class" class="nav-link" data-scroll-target="#summary-of-this-class"><span class="header-section-number">1.2</span> Summary of this class</a></li>
-  <li><a href="#遥感的基本概念与原理" id="toc-遥感的基本概念与原理" class="nav-link" data-scroll-target="#遥感的基本概念与原理"><span class="header-section-number">1.3</span> 遥感的基本概念与原理</a>
+  <li><a href="#basic-concepts-and-principles-of-remote-sensing" id="toc-basic-concepts-and-principles-of-remote-sensing" class="nav-link" data-scroll-target="#basic-concepts-and-principles-of-remote-sensing"><span class="header-section-number">1.3</span> Basic concepts and principles of remote sensing</a>
   <ul class="collapse">
-  <li><a href="#被动传感器与主动传感器的区别" id="toc-被动传感器与主动传感器的区别" class="nav-link" data-scroll-target="#被动传感器与主动传感器的区别"><span class="header-section-number">1.3.1</span> 被动传感器与主动传感器的区别</a></li>
-  <li><a href="#关于电磁波" id="toc-关于电磁波" class="nav-link" data-scroll-target="#关于电磁波"><span class="header-section-number">1.3.2</span> 关于电磁波</a></li>
+  <li><a href="#the-difference-between-passive-and-active-sensors" id="toc-the-difference-between-passive-and-active-sensors" class="nav-link" data-scroll-target="#the-difference-between-passive-and-active-sensors"><span class="header-section-number">1.3.1</span> The difference between passive and active sensors</a></li>
+  <li><a href="#the-relation-between-electromagnetic-wave-and-multispectrum" id="toc-the-relation-between-electromagnetic-wave-and-multispectrum" class="nav-link" data-scroll-target="#the-relation-between-electromagnetic-wave-and-multispectrum"><span class="header-section-number">1.3.2</span> The relation between electromagnetic wave and multispectrum</a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">1.4</span> Reflection</a></li>
   </ul>
@@ -190,39 +209,85 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="beginning" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="beginning"><span class="header-section-number">1.1</span> Beginning</h2>
-<p><strong>在开始这门课之前，我需要首先了解这一课程的目的，</strong>是介绍远程感知的基本概念和应用，并且<strong>通过RS这门课，我们即将学习到的内容</strong>包括：</p>
+<p>Before starting this course, I need to first understand the purpose of this course, which is to introduce the basic concepts and applications of remote sensing, and through this course of RS, the content we will learn includes:</p>
 <ul>
-<li><p>远程感知的定义、分类和平台</p></li>
-<li><p>电磁波与地球表面的相互作用</p></li>
-<li><p>远程感知数据的四个分辨率：空间、光谱、时间和辐射</p></li>
-<li><p>远程感知数据的格式、选择和限制</p></li>
-<li><p>远程感知数据的实际案例和分析方法</p></li>
+<li><p>Definition, classification and platform of remote perception</p></li>
+<li><p>Interaction of electromagnetic waves with the Earth’s surface</p></li>
+<li><p>Four resolutions for remote sensing data: spatial, spectral, temporal, and radiative</p></li>
+<li><p>Format, selection, and limitations of remote sensing data</p></li>
+<li><p>Practical cases and analysis methods of remote perception data</p></li>
 </ul>
-<p>这很容易让我联想到我过去本科期间自学到的RS的基础概念，我相信这门课不仅能帮助我温习过去的知识，还能充分补充其他的知识。</p>
+<p>It easily reminds me of the basic concepts of RS that I learned by myself during my undergraduate study. I believe that this course can not only help me review the past knowledge, but also fully supplement other knowledge.</p>
 </section>
 <section id="summary-of-this-class" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="summary-of-this-class"><span class="header-section-number">1.2</span> Summary of this class</h2>
 <ul>
-<li><p><strong>远程感知城市和环境</strong>：这是一门介绍远程感知基本原理和应用的课程，主要关注城市和环境问题。</p></li>
-<li><p><strong>远程感知的类型和原理</strong>：远程感知分为主动和被动两种，根据是否有自身的能源发射器。远程感知数据受到电磁波与大气和地表的相互作用的影响，需要进行校正和处理。</p></li>
-<li><p><strong>远程感知数据的格式和分辨率</strong>：远程感知数据通常是栅格数据，有不同的存储格式和组织方式。远程感知数据的质量和应用受到空间、光谱、时间和辐射分辨率的制约。</p></li>
+<li><p><strong>Tele-sensing Cities and Environments:</strong> This is a course that introduces the basic principles and applications of tele-sensing, with a focus on urban and environmental issues.</p></li>
+<li><p><strong>Types and principles of remote sensing:</strong> Remote sensing is divided into active and passive, depending on whether it has its own energy transmitter. Remote sensing data is affected by the interaction of electromagnetic waves with the atmosphere and the surface, and needs to be corrected and processed.</p></li>
+<li><p><strong>Format and resolution of remote sensing data:</strong> Remote sensing data is usually raster data and has different storage formats and ways of organizing. The quality and application of remote sensing data are constrained by spatial, spectral, temporal and radiative resolution.</p></li>
 </ul>
 </section>
-<section id="遥感的基本概念与原理" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="遥感的基本概念与原理"><span class="header-section-number">1.3</span> 遥感的基本概念与原理</h2>
-<section id="被动传感器与主动传感器的区别" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="被动传感器与主动传感器的区别"><span class="header-section-number">1.3.1</span> 被动传感器与主动传感器的区别</h3>
-<p><strong>两者的区别在于</strong>：被动传感器受大气散射的影响，需要在光照条件良好的时候工作，而主动传感器可以穿透云层、火山灰和大气条件，可以在夜间工作。</p>
-<p><strong>我能找到的关于主动传感器的例子</strong>是合成孔径雷达（SAR），可以“看穿云层”，并且具有极化特性，可以根据表面的粗糙度、形状、方向、湿度、盐度、密度等反映出不同的电磁波。</p>
+<section id="basic-concepts-and-principles-of-remote-sensing" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="basic-concepts-and-principles-of-remote-sensing"><span class="header-section-number">1.3</span> Basic concepts and principles of remote sensing</h2>
+<section id="the-difference-between-passive-and-active-sensors" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="the-difference-between-passive-and-active-sensors"><span class="header-section-number">1.3.1</span> The difference between passive and active sensors</h3>
+<p>The difference between the two is that passive sensors are affected by atmospheric scattering and need to work when light conditions are good, while active sensors can penetrate clouds, volcanic ash and atmospheric conditions and can work at night.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Active remote sensing example</th>
+<th style="text-align: center;">Passive remote sensing example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">For the untrained eye, it’s just a bunch of black and white pixels. But the reality is that there’s more than meets the eye. For example, the 3 main types of backscatter are: Specular reflection Double-bounce Diffuse scattering</td>
+<td style="text-align: center;">Passive remote sensing can be very similar to how our eyes interpret the world. But the power of passive remote sensing is to see light in the whole <a href="https://gisgeography.com/multispectral-vs-hyperspectral-imagery-explained/" style="blue">electromagnetic spectrum</a>. For example, this multispectral image can have different band combinations like color infrared.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">An example of an active sensor is <a href="https://gisgeography.com/synthetic-aperture-radar-examples/" style="blue">synthetic Aperture radar (SAR)</a>, which can “see through the clouds” and has polarization characteristics that can reflect different electromagnetic waves based on surface roughness, shape, orientation, humidity, salinity, density, etc.</td>
+<td style="text-align: center;"><p>In terms of passive remote sensing, the&nbsp;<a href="http://landsat.gsfc.nasa.gov/">Landsat mission</a>&nbsp;is the longest-running earth observation program. On board Landsat-8, <a href="https://gisgeography.com/landsat-8-bands-combinations/" class="illustration" style="blue">OLI</a> generates 9 spectral bands (Band 1 to 9).</p>
+<p><img src="images/clipboard-2255416882.png" class="img-fluid"></p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><p><img src="images/clipboard-3788896385.png" class="img-fluid"></p>
+<p><em>a SAR image</em></p></td>
+<td style="text-align: center;"><p><em><img src="images/clipboard-3968367586.png" class="img-fluid"></em></p>
+<p><em>Rocky Mountains in true color</em></p></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="关于电磁波" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="关于电磁波"><span class="header-section-number">1.3.2</span> 关于电磁波</h3>
+<section id="the-relation-between-electromagnetic-wave-and-multispectrum" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="the-relation-between-electromagnetic-wave-and-multispectrum"><span class="header-section-number">1.3.2</span> The relation between electromagnetic wave and multispectrum</h3>
+<p>According to the frequency of electromagnetic wave vibration, the electromagnetic spectrum can be divided into visible spectrum and invisible electromagnetic spectrum two parts.</p>
+<p>Multispectral remote sensing refers to the remote sensing observation and research of ground targets in multiple spectral bands. These bands can include infrared, visible, near-infrared, etc. By analyzing the information of these different bands, more information about the ground target can be obtained.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1755175584.png" class="img-fluid figure-img" width="424"></p>
+<figcaption class="figure-caption">Multispectral common channels</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center" style="gray">
+<figure class="figure">
+<p><img src="https://www.mdpi.com/remotesensing/remotesensing-13-00992/article_deploy/html/images/remotesensing-13-00992-g003.png" class="illustration img-fluid figure-img"></p>
+<figcaption class="figure-caption">Comparison of spectral bands between Sentinel-2 and Landsat-8<span class="citation" data-cites="lópez-puigdollers2021">(<a href="references.html#ref-lópez-puigdollers2021" role="doc-biblioref">López-Puigdollers, Mateo-García, and Gómez-Chova 2021</a>)</span></figcaption>
+</figure>
+</div>
+<p>In general, the relationship between electromagnetic wave and multi-spectrum is that multi-spectral remote sensing uses different bands of electromagnetic wave, and more information of ground targets can be obtained by analyzing the information of these bands.</p>
 </section>
 </section>
 <section id="reflection" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.4</span> Reflection</h2>
+<p>Reference</p>
+<p>López-Puigdollers D, Mateo-García G, Gómez-Chova L. Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images.&nbsp;<em>Remote Sensing</em>. 2021; 13(5):992. https://doi.org/10.3390/rs13050992</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-lópez-puigdollers2021" class="csl-entry" role="listitem">
+López-Puigdollers, Dan, Gonzalo Mateo-García, and Luis Gómez-Chova. 2021. <span>“Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images.”</span> <em>Remote Sensing</em> 13 (5): 992. <a href="https://doi.org/10.3390/rs13050992">https://doi.org/10.3390/rs13050992</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

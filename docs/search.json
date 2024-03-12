@@ -11,7 +11,7 @@
     "href": "intro.html#beginning",
     "title": "1  Week1 - Introduction of RS",
     "section": "1.1 Beginning",
-    "text": "1.1 Beginning\n在开始这门课之前，我需要首先了解这一课程的目的，是介绍远程感知的基本概念和应用，并且通过RS这门课，我们即将学习到的内容包括：\n\n远程感知的定义、分类和平台\n电磁波与地球表面的相互作用\n远程感知数据的四个分辨率：空间、光谱、时间和辐射\n远程感知数据的格式、选择和限制\n远程感知数据的实际案例和分析方法\n\n这很容易让我联想到我过去本科期间自学到的RS的基础概念，我相信这门课不仅能帮助我温习过去的知识，还能充分补充其他的知识。"
+    "text": "1.1 Beginning\nBefore starting this course, I need to first understand the purpose of this course, which is to introduce the basic concepts and applications of remote sensing, and through this course of RS, the content we will learn includes:\n\nDefinition, classification and platform of remote perception\nInteraction of electromagnetic waves with the Earth’s surface\nFour resolutions for remote sensing data: spatial, spectral, temporal, and radiative\nFormat, selection, and limitations of remote sensing data\nPractical cases and analysis methods of remote perception data\n\nIt easily reminds me of the basic concepts of RS that I learned by myself during my undergraduate study. I believe that this course can not only help me review the past knowledge, but also fully supplement other knowledge."
   },
   {
     "objectID": "wk2_Portfolio.html",
@@ -74,14 +74,14 @@
     "href": "intro.html#reflection",
     "title": "1  Week1 - Introduction of RS",
     "section": "1.4 Reflection",
-    "text": "1.4 Reflection"
+    "text": "1.4 Reflection\nReference\nLópez-Puigdollers D, Mateo-García G, Gómez-Chova L. Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images. Remote Sensing. 2021; 13(5):992. https://doi.org/10.3390/rs13050992\n\n\n\n\nLópez-Puigdollers, Dan, Gonzalo Mateo-García, and Luis Gómez-Chova. 2021. “Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images.” Remote Sensing 13 (5): 992. https://doi.org/10.3390/rs13050992."
   },
   {
     "objectID": "intro.html#summary-of-this-class",
     "href": "intro.html#summary-of-this-class",
     "title": "1  Week1 - Introduction of RS",
     "section": "1.2 Summary of this class",
-    "text": "1.2 Summary of this class\n\n远程感知城市和环境：这是一门介绍远程感知基本原理和应用的课程，主要关注城市和环境问题。\n远程感知的类型和原理：远程感知分为主动和被动两种，根据是否有自身的能源发射器。远程感知数据受到电磁波与大气和地表的相互作用的影响，需要进行校正和处理。\n远程感知数据的格式和分辨率：远程感知数据通常是栅格数据，有不同的存储格式和组织方式。远程感知数据的质量和应用受到空间、光谱、时间和辐射分辨率的制约。"
+    "text": "1.2 Summary of this class\n\nTele-sensing Cities and Environments: This is a course that introduces the basic principles and applications of tele-sensing, with a focus on urban and environmental issues.\nTypes and principles of remote sensing: Remote sensing is divided into active and passive, depending on whether it has its own energy transmitter. Remote sensing data is affected by the interaction of electromagnetic waves with the atmosphere and the surface, and needs to be corrected and processed.\nFormat and resolution of remote sensing data: Remote sensing data is usually raster data and has different storage formats and ways of organizing. The quality and application of remote sensing data are constrained by spatial, spectral, temporal and radiative resolution."
   },
   {
     "objectID": "intro.html#遥感的基本概念与原理",
@@ -103,5 +103,12 @@
     "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
     "section": "5.3 SAR数据的应用",
     "text": "5.3 SAR数据的应用\n分析两个图像之间的变化（例如比率或对数比率）\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\n通过以下方式查看随时间变化的差异：\nPixel-Wise T-Test"
+  },
+  {
+    "objectID": "intro.html#basic-concepts-and-principles-of-remote-sensing",
+    "href": "intro.html#basic-concepts-and-principles-of-remote-sensing",
+    "title": "1  Week1 - Introduction of RS",
+    "section": "1.3 Basic concepts and principles of remote sensing",
+    "text": "1.3 Basic concepts and principles of remote sensing\n\n1.3.1 The difference between passive and active sensors\nThe difference between the two is that passive sensors are affected by atmospheric scattering and need to work when light conditions are good, while active sensors can penetrate clouds, volcanic ash and atmospheric conditions and can work at night.\n\n\n\nActive remote sensing example\nPassive remote sensing example\n\n\n\n\nFor the untrained eye, it’s just a bunch of black and white pixels. But the reality is that there’s more than meets the eye. For example, the 3 main types of backscatter are: Specular reflection Double-bounce Diffuse scattering\nPassive remote sensing can be very similar to how our eyes interpret the world. But the power of passive remote sensing is to see light in the whole electromagnetic spectrum. For example, this multispectral image can have different band combinations like color infrared.\n\n\nAn example of an active sensor is synthetic Aperture radar (SAR), which can “see through the clouds” and has polarization characteristics that can reflect different electromagnetic waves based on surface roughness, shape, orientation, humidity, salinity, density, etc.\nIn terms of passive remote sensing, the Landsat mission is the longest-running earth observation program. On board Landsat-8, OLI generates 9 spectral bands (Band 1 to 9).\n\n\n\n\na SAR image\n\nRocky Mountains in true color\n\n\n\n\n\n1.3.2 The relation between electromagnetic wave and multispectrum\nAccording to the frequency of electromagnetic wave vibration, the electromagnetic spectrum can be divided into visible spectrum and invisible electromagnetic spectrum two parts.\nMultispectral remote sensing refers to the remote sensing observation and research of ground targets in multiple spectral bands. These bands can include infrared, visible, near-infrared, etc. By analyzing the information of these different bands, more information about the ground target can be obtained.\n\n\n\nMultispectral common channels\n\n\n\n\n\nComparison of spectral bands between Sentinel-2 and Landsat-8(López-Puigdollers, Mateo-García, and Gómez-Chova 2021)\n\n\nIn general, the relationship between electromagnetic wave and multi-spectrum is that multi-spectral remote sensing uses different bands of electromagnetic wave, and more information of ground targets can be obtained by analyzing the information of these bands."
   }
 ]

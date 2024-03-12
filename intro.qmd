@@ -4,50 +4,62 @@ title: "Week1 - Introduction of RS"
 
 ## Beginning
 
-在开始这门课之前，我需要首先了解这一课程的目的，是介绍远程感知的基本概念和应用，并且**通过**RS这门课，我们即将学习到的内容包括：
+Before starting this course, I need to first understand the purpose of this course, which is to introduce the basic concepts and applications of remote sensing, and through this course of RS, the content we will learn includes:
 
--   远程感知的定义、分类和平台
+-   Definition, classification and platform of remote perception
 
--   电磁波与地球表面的相互作用
+-   Interaction of electromagnetic waves with the Earth's surface
 
--   远程感知数据的四个分辨率：空间、光谱、时间和辐射
+-   Four resolutions for remote sensing data: spatial, spectral, temporal, and radiative
 
--   远程感知数据的格式、选择和限制
+-   Format, selection, and limitations of remote sensing data
 
--   远程感知数据的实际案例和分析方法
+-   Practical cases and analysis methods of remote perception data
 
-这很容易让我联想到我过去本科期间自学到的RS的基础概念，我相信这门课不仅能帮助我温习过去的知识，还能充分补充其他的知识。
+It easily reminds me of the basic concepts of RS that I learned by myself during my undergraduate study. I believe that this course can not only help me review the past knowledge, but also fully supplement other knowledge.
 
 ## Summary of this class
 
--   **远程感知城市和环境**：这是一门介绍远程感知基本原理和应用的课程，主要关注城市和环境问题。
+-   **Tele-sensing Cities and Environments:** This is a course that introduces the basic principles and applications of tele-sensing, with a focus on urban and environmental issues.
 
--   **远程感知的类型和原理**：远程感知分为主动和被动两种，根据是否有自身的能源发射器。远程感知数据受到电磁波与大气和地表的相互作用的影响，需要进行校正和处理。
+-   **Types and principles of remote sensing:** Remote sensing is divided into active and passive, depending on whether it has its own energy transmitter. Remote sensing data is affected by the interaction of electromagnetic waves with the atmosphere and the surface, and needs to be corrected and processed.
 
--   **远程感知数据的格式和分辨率**：远程感知数据通常是栅格数据，有不同的存储格式和组织方式。远程感知数据的质量和应用受到空间、光谱、时间和辐射分辨率的制约。
+-   **Format and resolution of remote sensing data:** Remote sensing data is usually raster data and has different storage formats and ways of organizing. The quality and application of remote sensing data are constrained by spatial, spectral, temporal and radiative resolution.
 
-## 遥感的基本概念与原理
+## Basic concepts and principles of remote sensing
 
-### 被动传感器与主动传感器的区别
+### The difference between passive and active sensors
 
-**两者的区别在于**：被动传感器受大气散射的影响，需要在光照条件良好的时候工作，而主动传感器可以穿透云层、火山灰和大气条件，可以在夜间工作。
+The difference between the two is that passive sensors are affected by atmospheric scattering and need to work when light conditions are good, while active sensors can penetrate clouds, volcanic ash and atmospheric conditions and can work at night.
 
-**我能找到的关于主动传感器的例子**是合成孔径雷达（SAR），可以“看穿云层”，并且具有极化特性，可以根据表面的粗糙度、形状、方向、湿度、盐度、密度等反映出不同的电磁波。
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Active remote sensing example                                                                                                                                                                                                                                                                                                                             | Passive remote sensing example                                                                                                                                                                                                                                                                                                                                             |
++:=========================================================================================================================================================================================================================================================================================================================================================:+:==========================================================================================================================================================================================================================================================================================================================================================================:+
+| For the untrained eye, it’s just a bunch of black and white pixels. But the reality is that there’s more than meets the eye. For example, the 3 main types of backscatter are: Specular reflection Double-bounce Diffuse scattering                                                                                                                       | Passive remote sensing can be very similar to how our eyes interpret the world. But the power of passive remote sensing is to see light in the whole [electromagnetic spectrum](https://gisgeography.com/multispectral-vs-hyperspectral-imagery-explained/){style="blue"}. For example, this multispectral image can have different band combinations like color infrared. |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| An example of an active sensor is [synthetic Aperture radar (SAR)](https://gisgeography.com/synthetic-aperture-radar-examples/){style="blue"}, which can "see through the clouds" and has polarization characteristics that can reflect different electromagnetic waves based on surface roughness, shape, orientation, humidity, salinity, density, etc. | In terms of passive remote sensing, the [Landsat mission](http://landsat.gsfc.nasa.gov/) is the longest-running earth observation program. On board Landsat-8, [OLI](https://gisgeography.com/landsat-8-bands-combinations/){.illustration style="blue"} generates 9 spectral bands (Band 1 to 9).                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                           | ![](images/clipboard-2255416882.png)                                                                                                                                                                                                                                                                                                                                       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/clipboard-3788896385.png)                                                                                                                                                                                                                                                                                                                      | *![](images/clipboard-3968367586.png)*                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                            |
+| *a SAR image*                                                                                                                                                                                                                                                                                                                                             | *Rocky Mountains in true color*                                                                                                                                                                                                                                                                                                                                            |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+### The relation between electromagnetic wave and multispectrum
 
-- Active remote sensing example
-For the untrained eye, it’s just a bunch of black and white pixels. But the reality is that there’s more than meets the eye. For example, the 3 main types of backscatter are:
-Specular reflection
-Double-bounce
-Diffuse scattering
+According to the frequency of electromagnetic wave vibration, the electromagnetic spectrum can be divided into visible spectrum and invisible electromagnetic spectrum two parts.
 
+Multispectral remote sensing refers to the remote sensing observation and research of ground targets in multiple spectral bands. These bands can include infrared, visible, near-infrared, etc. By analyzing the information of these different bands, more information about the ground target can be obtained.
 
-- Passive remote sensing example
+![Multispectral common channels](images/clipboard-1755175584.png){fig-align="center" width="424"}
 
+![Comparison of spectral bands between Sentinel-2 and Landsat-8[@lópez-puigdollers2021]](https://www.mdpi.com/remotesensing/remotesensing-13-00992/article_deploy/html/images/remotesensing-13-00992-g003.png){.illustration style="gray" fig-align="center"}
 
-Ref: https://gisgeography.com/passive-active-sensors-remote-sensing/
-
-
-### 关于电磁波
+In general, the relationship between electromagnetic wave and multi-spectrum is that multi-spectral remote sensing uses different bands of electromagnetic wave, and more information of ground targets can be obtained by analyzing the information of these bands.
 
 ## Reflection
+
+## Reference
+
+López-Puigdollers D, Mateo-García G, Gómez-Chova L. Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images. *Remote Sensing*. 2021; 13(5):992. https://doi.org/10.3390/rs13050992
