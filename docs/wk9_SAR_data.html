@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>learningDiary - 5&nbsp; Week9 - SAR Data</title>
+<title>learningDiary - 5&nbsp; Week9 - Synthetic Aperture Radar (SAR) data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk9_SAR_data.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - SAR Data</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk9_SAR_data.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk9_SAR_data.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - SAR Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,6 +158,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">5.1</span> Abstract</a></li>
+  <li><a href="#difference-of-other-sar" id="toc-difference-of-other-sar" class="nav-link" data-scroll-target="#difference-of-other-sar"><span class="header-section-number">5.2</span> Difference of other SAR</a></li>
+  <li><a href="#sar数据的应用" id="toc-sar数据的应用" class="nav-link" data-scroll-target="#sar数据的应用"><span class="header-section-number">5.3</span> SAR数据的应用</a></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - SAR Data</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></h1>
 </div>
 
 
@@ -184,9 +186,68 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">5.1</span> Abstract</h2>
 <p>This class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given.</p>
-<ul>
-<li></li>
-</ul>
+</section>
+<section id="difference-of-other-sar" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="difference-of-other-sar"><span class="header-section-number">5.2</span> Difference of other SAR</h2>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 20%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>SAR</th>
+<th>InSAR</th>
+<th>DInSAR</th>
+<th>PSInSAR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Synthetic Aperture Radar</td>
+<td>Interferometric Synthetic Aperture Radar</td>
+<td>Differential Interferometric Synthetic Aperture Radar</td>
+<td>Persistent Scatterer Interferometric SAR</td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><p>A radar system capable of producing high-resolution images.</p></li>
+<li><p>Uses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.</p></li>
+<li><p>Used for surface observations such as land use, topography, and forest cover.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Analyzes surface deformation by exploiting the phase difference between two remote sensing images.</p></li>
+<li><p>Calculates the deformation at each pixel on the ground surface between two observations.</p></li>
+<li><p>Reveals elevation and deformation information.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Builds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.</p></li>
+<li><p>Sensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.</p></li>
+<li><p>Utilizes two SAR images and external topographic data to measure subtle surface deformations.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Models and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.</p></li>
+<li><p>Reveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sar数据的应用" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sar数据的应用"><span class="header-section-number">5.3</span> SAR数据的应用</h2>
+<p>分析两个图像之间的变化（例如比率或对数比率）</p>
+<p><a href="https://oballinger.github.io/PWTT/"><strong>Open Access Damage Detection Using Sentinel-1 Imagery</strong></a></p>
+<p><a href="https://bellingcat.github.io/RS4OSINT/C3_Blast.html"><strong>Blast Damage Assessment</strong></a></p>
+<p>通过以下方式查看随时间变化的差异：</p>
+<p><a href="https://oballinger.github.io/PWTT/paper.html">Pixel-Wise T-Test</a></p>
 
 
 </section>

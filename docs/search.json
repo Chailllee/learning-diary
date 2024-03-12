@@ -51,7 +51,7 @@
   {
     "objectID": "wk9_SAR_data.html#abstract",
     "href": "wk9_SAR_data.html#abstract",
-    "title": "5  Week9 - SAR Data",
+    "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
     "section": "5.1 Abstract",
     "text": "5.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
   },
@@ -88,6 +88,20 @@
     "href": "intro.html#遥感的基本概念与原理",
     "title": "1  Week1 - Introduction of RS",
     "section": "1.3 遥感的基本概念与原理",
-    "text": "1.3 遥感的基本概念与原理\n\n1.3.1 被动传感器与主动传感器的区别\n被动传感器：使用现有的能量，不发射任何东西，检测来自太阳的反射能量，例如人眼、相机、卫星传感器。\n主动传感器：有自己的能量源，主动发射电磁波，然后等待接收，例如雷达、X射线、LiDAR。\n被动和主动传感器的区别：被动传感器受大气散射的影响，需要在光照条件良好的时候工作，而主动传感器可以穿透云层、火山灰和大气条件，可以在夜间工作。\n主动传感器的例子：合成孔径雷达（SAR），可以“看穿云层”，并且具有极化特性，可以根据表面的粗糙度、形状、方向、湿度、盐度、密度等反映出不同的电磁波。"
+    "text": "1.3 遥感的基本概念与原理\n\n1.3.1 被动传感器与主动传感器的区别\n两者的区别在于：被动传感器受大气散射的影响，需要在光照条件良好的时候工作，而主动传感器可以穿透云层、火山灰和大气条件，可以在夜间工作。\n我能找到的关于主动传感器的例子是合成孔径雷达（SAR），可以“看穿云层”，并且具有极化特性，可以根据表面的粗糙度、形状、方向、湿度、盐度、密度等反映出不同的电磁波。\n\n\n1.3.2 关于电磁波"
+  },
+  {
+    "objectID": "wk9_SAR_data.html#difference-of-other-sar",
+    "href": "wk9_SAR_data.html#difference-of-other-sar",
+    "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "5.2 Difference of other SAR",
+    "text": "5.2 Difference of other SAR\n\n\n\n\n\n\n\n\n\nSAR\nInSAR\nDInSAR\nPSInSAR\n\n\n\n\nSynthetic Aperture Radar\nInterferometric Synthetic Aperture Radar\nDifferential Interferometric Synthetic Aperture Radar\nPersistent Scatterer Interferometric SAR\n\n\n\nA radar system capable of producing high-resolution images.\nUses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.\nUsed for surface observations such as land use, topography, and forest cover.\n\n\nAnalyzes surface deformation by exploiting the phase difference between two remote sensing images.\nCalculates the deformation at each pixel on the ground surface between two observations.\nReveals elevation and deformation information.\n\n\nBuilds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.\nSensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.\nUtilizes two SAR images and external topographic data to measure subtle surface deformations.\n\n\nModels and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.\nReveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes."
+  },
+  {
+    "objectID": "wk9_SAR_data.html#sar数据的应用",
+    "href": "wk9_SAR_data.html#sar数据的应用",
+    "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "5.3 SAR数据的应用",
+    "text": "5.3 SAR数据的应用\n分析两个图像之间的变化（例如比率或对数比率）\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\n通过以下方式查看随时间变化的差异：\nPixel-Wise T-Test"
   }
 ]
