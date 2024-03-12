@@ -34,6 +34,20 @@ title: "Week1 - Introduction of RS"
 
 **我能找到的关于主动传感器的例子**是合成孔径雷达（SAR），可以“看穿云层”，并且具有极化特性，可以根据表面的粗糙度、形状、方向、湿度、盐度、密度等反映出不同的电磁波。
 
+
+- Active remote sensing example
+For the untrained eye, it’s just a bunch of black and white pixels. But the reality is that there’s more than meets the eye. For example, the 3 main types of backscatter are:
+Specular reflection
+Double-bounce
+Diffuse scattering
+
+
+- Passive remote sensing example
+
+
+Ref: https://gisgeography.com/passive-active-sensors-remote-sensing/
+
+
 ### 关于电磁波
 
 ## Reflection
