@@ -1,9 +1,13 @@
 ---
-title: "Week9 - SAR Data"
+title: "Week9 - Synthetic Aperture Radar (SAR) data"
 ---
 
 ## Abstract
 
 This class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given.
 
--   
+| SAR - Synthetic Aperture Radar | InSAR - Interferometric Synthetic Aperture Radar | DInSAR - Differential Interferometric Synthetic Aperture Radar | PSInSAR - Persistent Scatterer Interferometric SAR |
+|------------------|------------------|-------------------|------------------|
+|                                |                                                  |                                                                |                                                    |
+|                                |                                                  |                                                                |                                                    |
+|                                |                                                  |                                                                |                                                    |
