@@ -9,9 +9,12 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - wk2_Portfolio.Rmd
+    - wk2_xaringen.qmd
+    - wk3_RS_data.qmd
+    - wk4_policy.amd
     - wk5_GEE.qmd
-    - wk7_classification1.qmd
+    - wk6_classification1.qmd
+    
     - wk9_SAR_data.qmd
     - summary.qmd
     - references.qmd
