@@ -11,10 +11,9 @@ book:
     - intro.qmd
     - wk2_xaringen.qmd
     - wk3_RS_data.qmd
-    - wk4_policy.amd
+    - wk4_policy.qmd
     - wk5_GEE.qmd
     - wk6_classification1.qmd
-    
     - wk9_SAR_data.qmd
     - summary.qmd
     - references.qmd

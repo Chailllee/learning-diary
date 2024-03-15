@@ -52,7 +52,7 @@ According to the frequency of electromagnetic wave vibration, the electromagneti
 
 Multispectral remote sensing refers to the remote sensing observation and research of ground targets in multiple spectral bands. These bands can include infrared, visible, near-infrared, etc. By analyzing the information of these different bands, more information about the ground target can be obtained.
 
-![Multispectral common channels](images/clipboard-1755175584.png){p align="center" fig-align="center" width="424"}
+![Multispectral common channels](images/clipboard-1755175584.png)
 
 ![Comparison of spectral bands between Sentinel-2 and Landsat-8[^intro-1][@lópez-puigdollers2021]](https://www.mdpi.com/remotesensing/remotesensing-13-00992/article_deploy/html/images/remotesensing-13-00992-g003.png){.illustration style="gray" fig-align="center"}
 
