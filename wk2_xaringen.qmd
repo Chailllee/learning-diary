@@ -9,7 +9,7 @@ xaringanExtra::embed_xaringan( url = "https://chailllee.github.io/learning-diary
 ```
 
 ```{r}
-#| file: wk2_Portfolio.Rmd 
+#| file: wk2_Landsat9.Rmd 
 #| eval: false 
 #| echo: true 
 #| code-folding: true 
