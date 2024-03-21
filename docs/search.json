@@ -23,16 +23,16 @@
   {
     "objectID": "wk5_GEE.html#summary",
     "href": "wk5_GEE.html#summary",
-    "title": "3  Week5 - Google Earth Engine",
-    "section": "3.1 Summary",
-    "text": "3.1 Summary\n课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。\n\nGEE 的特点：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。\nGEE 的数据结构：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。\nGEE 的操作方法：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。\n\n课程实践练习部分中可以了解到：\n\n高级像素级图像变换：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。\nGEE应用程序和数据目录：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。"
+    "title": "4  Week5 - Google Earth Engine",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary\n课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。\n\nGEE 的特点：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。\nGEE 的数据结构：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。\nGEE 的操作方法：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。\n\n课程实践练习部分中可以了解到：\n\n高级像素级图像变换：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。\nGEE应用程序和数据目录：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。"
   },
   {
     "objectID": "wk5_GEE.html#whats-gee",
     "href": "wk5_GEE.html#whats-gee",
-    "title": "3  Week5 - Google Earth Engine",
-    "section": "3.2 What’s GEE",
-    "text": "3.2 What’s GEE"
+    "title": "4  Week5 - Google Earth Engine",
+    "section": "4.2 What’s GEE",
+    "text": "4.2 What’s GEE"
   },
   {
     "objectID": "wk7_classification1.html#overfiting",
@@ -51,14 +51,14 @@
   {
     "objectID": "wk9_SAR_data.html#abstract",
     "href": "wk9_SAR_data.html#abstract",
-    "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
-    "section": "5.1 Abstract",
-    "text": "5.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
+    "title": "7  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "7.1 Abstract",
+    "text": "7.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "6  Summary",
+    "title": "8  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
   },
@@ -93,16 +93,16 @@
   {
     "objectID": "wk9_SAR_data.html#difference-of-other-sar",
     "href": "wk9_SAR_data.html#difference-of-other-sar",
-    "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
-    "section": "5.2 Difference of other SAR",
-    "text": "5.2 Difference of other SAR\n\n\n\n\n\n\n\n\n\nSAR\nInSAR\nDInSAR\nPSInSAR\n\n\n\n\nSynthetic Aperture Radar\nInterferometric Synthetic Aperture Radar\nDifferential Interferometric Synthetic Aperture Radar\nPersistent Scatterer Interferometric SAR\n\n\n\nA radar system capable of producing high-resolution images.\nUses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.\nUsed for surface observations such as land use, topography, and forest cover.\n\n\nAnalyzes surface deformation by exploiting the phase difference between two remote sensing images.\nCalculates the deformation at each pixel on the ground surface between two observations.\nReveals elevation and deformation information.\n\n\nBuilds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.\nSensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.\nUtilizes two SAR images and external topographic data to measure subtle surface deformations.\n\n\nModels and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.\nReveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes."
+    "title": "7  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "7.2 Difference of other SAR",
+    "text": "7.2 Difference of other SAR\n\n\n\n\n\n\n\n\n\nSAR\nInSAR\nDInSAR\nPSInSAR\n\n\n\n\nSynthetic Aperture Radar\nInterferometric Synthetic Aperture Radar\nDifferential Interferometric Synthetic Aperture Radar\nPersistent Scatterer Interferometric SAR\n\n\n\nA radar system capable of producing high-resolution images.\nUses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.\nUsed for surface observations such as land use, topography, and forest cover.\n\n\nAnalyzes surface deformation by exploiting the phase difference between two remote sensing images.\nCalculates the deformation at each pixel on the ground surface between two observations.\nReveals elevation and deformation information.\n\n\nBuilds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.\nSensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.\nUtilizes two SAR images and external topographic data to measure subtle surface deformations.\n\n\nModels and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.\nReveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes."
   },
   {
     "objectID": "wk9_SAR_data.html#sar数据的应用",
     "href": "wk9_SAR_data.html#sar数据的应用",
-    "title": "5  Week9 - Synthetic Aperture Radar (SAR) data",
-    "section": "5.3 SAR数据的应用",
-    "text": "5.3 SAR数据的应用\n分析两个图像之间的变化（例如比率或对数比率）\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\n通过以下方式查看随时间变化的差异：\nPixel-Wise T-Test"
+    "title": "7  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "7.3 SAR数据的应用",
+    "text": "7.3 SAR数据的应用\n分析两个图像之间的变化（例如比率或对数比率）\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\n通过以下方式查看随时间变化的差异：\nPixel-Wise T-Test"
   },
   {
     "objectID": "intro.html#basic-concepts-and-principles-of-remote-sensing",
@@ -142,36 +142,43 @@
   {
     "objectID": "wk3_RS_data.html#abstract",
     "href": "wk3_RS_data.html#abstract",
-    "title": "3  Week3 - Remote Sensing Data",
-    "section": "3.1 Abstract",
-    "text": "3.1 Abstract\nThis lecture mainly provides detailed information on remote sensing cities and environments, especially on the use and processing of remote sensing data, and introduces the correction methods of remote sensing data, including geometric, atmospheric, orthographic/topographic correction and radiometric correction. Prior to this, data processing is required, including data linking and enhancement such as feathering, image enhancement, and other enhancement techniques. In addition to this, this lesson introduces remote sensing technology, explaining the different types of remote sensing sensors, such as push-sweep and scan sensors, and how they work. Practical Guide: Provides a guide on how to use presentation slides, including the use of search tools and the drawing function on slides."
+    "title": "2  Week3 - Remote Sensing Data",
+    "section": "2.1 Abstract",
+    "text": "2.1 Abstract\nThis lecture mainly provides detailed information on remote sensing cities and environments, especially on the use and processing of remote sensing data, and introduces the correction methods of remote sensing data, including geometric, atmospheric, orthographic/topographic correction and radiometric correction. Prior to this, data processing is required, including data linking and enhancement such as feathering, image enhancement, and other enhancement techniques. In addition to this, this lesson introduces remote sensing technology, explaining the different types of remote sensing sensors, such as push-sweep and scan sensors, and how they work. Practical Guide: Provides a guide on how to use presentation slides, including the use of search tools and the drawing function on slides."
   },
   {
     "objectID": "wk4_policy.html#abstract",
     "href": "wk4_policy.html#abstract",
-    "title": "4  Week4 - Policy Applications",
-    "section": "4.1 Abstract",
-    "text": "4.1 Abstract"
+    "title": "3  Week4 - Policy Applications",
+    "section": "3.1 Abstract",
+    "text": "3.1 Abstract"
   },
   {
     "objectID": "wk6_classification1.html#overfiting",
     "href": "wk6_classification1.html#overfiting",
-    "title": "6  Week7 - Classification-I",
-    "section": "6.1 Overfiting",
-    "text": "6.1 Overfiting\n\nTree score = SSR + tree penalty (alpha) * T (number of leaves)\n\n对于Tree score公式，为啥去掉越多leaf, alpha越大？\n在决策树的剪枝过程中，我们使用一个参数称为ccp_alpha（cost complexity parameter）来控制剪枝的程度。这个参数的值越大，意味着我们更倾向于剪掉更多的叶节点，从而简化树的结构。\n让我们来理解一下为什么去掉越多的叶节点，ccp_alpha 就越大：\n\n基尼杂质和树的复杂度：\n\n基尼杂质是用来衡量数据集纯度的指标，它越小表示数据集的纯度越高。\n在剪枝过程中，我们希望保留那些对模型性能有积极影响的叶节点，同时减少模型的复杂度。\n当我们去掉一个叶节点时，基尼杂质会增加，因为我们丧失了这个叶节点的纯度。\n\n成本复杂度：\n\nccp_alpha 是一个成本复杂度参数，它在剪枝过程中平衡了模型的拟合程度和复杂度。\n当我们增大 ccp_alpha 时，模型更倾向于剪掉更多的叶节点，从而减少模型的复杂度。\n这样做的目的是防止过拟合，提高模型的泛化能力。\nYoutube video\nHow to Prune Regression Trees"
+    "title": "5  Week7 - Classification-I",
+    "section": "5.1 Overfiting",
+    "text": "5.1 Overfiting\n\nTree score = SSR + tree penalty (alpha) * T (number of leaves)\n\n对于Tree score公式，为啥去掉越多leaf, alpha越大？\n在决策树的剪枝过程中，我们使用一个参数称为ccp_alpha（cost complexity parameter）来控制剪枝的程度。这个参数的值越大，意味着我们更倾向于剪掉更多的叶节点，从而简化树的结构。\n让我们来理解一下为什么去掉越多的叶节点，ccp_alpha 就越大：\n\n基尼杂质和树的复杂度：\n\n基尼杂质是用来衡量数据集纯度的指标，它越小表示数据集的纯度越高。\n在剪枝过程中，我们希望保留那些对模型性能有积极影响的叶节点，同时减少模型的复杂度。\n当我们去掉一个叶节点时，基尼杂质会增加，因为我们丧失了这个叶节点的纯度。\n\n成本复杂度：\n\nccp_alpha 是一个成本复杂度参数，它在剪枝过程中平衡了模型的拟合程度和复杂度。\n当我们增大 ccp_alpha 时，模型更倾向于剪掉更多的叶节点，从而减少模型的复杂度。\n这样做的目的是防止过拟合，提高模型的泛化能力。\nYoutube video\nHow to Prune Regression Trees"
   },
   {
     "objectID": "wk6_classification1.html#random-forest",
     "href": "wk6_classification1.html#random-forest",
-    "title": "6  Week7 - Classification-I",
-    "section": "6.2 Random Forest",
-    "text": "6.2 Random Forest"
+    "title": "5  Week7 - Classification-I",
+    "section": "5.2 Random Forest",
+    "text": "5.2 Random Forest"
   },
   {
     "objectID": "wk7_classification2.html#abstract",
     "href": "wk7_classification2.html#abstract",
-    "title": "7  Week7 - Classification and Accuracy",
-    "section": "7.1 Abstract",
-    "text": "7.1 Abstract"
+    "title": "6  Week7 - Classification and Accuracy",
+    "section": "6.1 Abstract",
+    "text": "6.1 Abstract"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "López-Puigdollers, Dan, Gonzalo Mateo-García, and Luis Gómez-Chova.\n2021. “Benchmarking Deep Learning Models for Cloud Detection in\nLandsat-8 and Sentinel-2 Images.” Remote Sensing 13 (5):\n992. https://doi.org/10.3390/rs13050992."
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>learningDiary - 5&nbsp; Week9 - Synthetic Aperture Radar (SAR) data</title>
+<title>learningDiary - 7&nbsp; Week9 - Synthetic Aperture Radar (SAR) data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./summary.html" rel="next">
-<link href="./wk7_classification1.html" rel="prev">
+<link href="./wk7_classification2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk9_SAR_data.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk9_SAR_data.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -113,32 +113,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wk2_Portfolio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Presentation Ninja</span></span></a>
+  <a href="./wk3_RS_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week3 - Remote Sensing Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk4_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week4 - Policy Applications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk5_GEE.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week5 - Google Earth Engine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week5 - Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wk7_classification1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></span></a>
+  <a href="./wk6_classification1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk7_classification2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week7 - Classification and Accuracy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk9_SAR_data.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,9 +169,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">5.1</span> Abstract</a></li>
-  <li><a href="#difference-of-other-sar" id="toc-difference-of-other-sar" class="nav-link" data-scroll-target="#difference-of-other-sar"><span class="header-section-number">5.2</span> Difference of other SAR</a></li>
-  <li><a href="#sar数据的应用" id="toc-sar数据的应用" class="nav-link" data-scroll-target="#sar数据的应用"><span class="header-section-number">5.3</span> SAR数据的应用</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">7.1</span> Abstract</a></li>
+  <li><a href="#difference-of-other-sar" id="toc-difference-of-other-sar" class="nav-link" data-scroll-target="#difference-of-other-sar"><span class="header-section-number">7.2</span> Difference of other SAR</a></li>
+  <li><a href="#sar数据的应用" id="toc-sar数据的应用" class="nav-link" data-scroll-target="#sar数据的应用"><span class="header-section-number">7.3</span> SAR数据的应用</a></li>
   </ul>
 </nav>
     </div>
@@ -168,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week9 - Synthetic Aperture Radar (SAR) data</span></h1>
 </div>
 
 
@@ -183,12 +195,12 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="abstract" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">5.1</span> Abstract</h2>
+<section id="abstract" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">7.1</span> Abstract</h2>
 <p>This class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given.</p>
 </section>
-<section id="difference-of-other-sar" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="difference-of-other-sar"><span class="header-section-number">5.2</span> Difference of other SAR</h2>
+<section id="difference-of-other-sar" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="difference-of-other-sar"><span class="header-section-number">7.2</span> Difference of other SAR</h2>
 <table class="table">
 <colgroup>
 <col style="width: 27%">
@@ -241,8 +253,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="sar数据的应用" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="sar数据的应用"><span class="header-section-number">5.3</span> SAR数据的应用</h2>
+<section id="sar数据的应用" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="sar数据的应用"><span class="header-section-number">7.3</span> SAR数据的应用</h2>
 <p>分析两个图像之间的变化（例如比率或对数比率）</p>
 <p><a href="https://oballinger.github.io/PWTT/"><strong>Open Access Damage Detection Using Sentinel-1 Imagery</strong></a></p>
 <p><a href="https://bellingcat.github.io/RS4OSINT/C3_Blast.html"><strong>Blast Damage Assessment</strong></a></p>
@@ -488,13 +500,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wk7_classification1.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week7 - Classification-I</span></span>
+      <a href="./wk7_classification2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week7 - Classification and Accuracy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
