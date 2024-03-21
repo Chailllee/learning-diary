@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentation Ninja</title>
+    <title>Week 2 - Xaraingen</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Yihui Xie" />
+    <meta name="author" content="Xiaoyi Chen" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
@@ -29,23 +29,155 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Presentation Ninja
+# Week 2 - Xaraingen
 ]
 .subtitle[
-## ⚔<br/>with xaringan
+## About Landsat9
 ]
 .author[
-### Yihui Xie
+### Xiaoyi Chen
 ]
 .institute[
-### RStudio, PBC
+### CASA, UCL
 ]
 .date[
-### 2016/12/12 (updated: 2024-03-14)
+### 2024/3/12 (updated: 2024-03-21)
 ]
 
 ---
 
+class: inverse, center, title-slide, middle
+
+background-image: url("https://th.bing.com/th/id/OIP.bymqEIDKbTreoK_4_0JyzgHaEK?rs=1&amp;pid=ImgDetMain")
+background-size: cover
+background-position: center
+
+# Landsat 9
+## A new milestone for Earth observation
+### 21/03/2024
+
+---
+
+--- 
+&lt;style type="text/css"&gt;
+/* 自定义CSS样式 */
+
+/* 设置图片大小 */
+img {
+  max-width: 50%; /* 设置图片最大宽度为幻灯片宽度的50% */
+  height: auto; /* 保持宽高比例 */
+}
+&lt;/style&gt;
+
+## 1 Introduction to Landsat 9
+### 1.1 Landsat9 Overview
+
+&lt;img src="https://landsat.gsfc.nasa.gov/wp-content/uploads/2020-07/Landsat_timeline_20200318_title.gif" height="200%" style="display: block; margin: auto;" /&gt;
+
+&lt;br/&gt;
+Landsat 9, launched in September 27, 2021, is a collaborative satellite mission between NASA and the U.S. Geological Survey (USGS). It serves as a continuation of the Landsat program's legacy in Earth observation.
+
+---
+## 1 Introduction to Landsat 9
+### 1.2 Mission Objectives:
+
+&lt;br/&gt;
+The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.
+
+
+---
+## 2 Landsat 9 Instruments
+
+
+**Operational Land Imager 2 (OLI-2):**
+OLI-2 is an advanced imaging instrument carried by Landsat 9, featuring high resolution and multi-band observation capabilities. It captures spectral characteristics of the Earth's surface, aiding in land surface identification and monitoring.
+
+**Thermal Infrared Sensor 2 (TIRS-2):**
+TIRS-2 is another crucial sensor specialized in measuring thermal infrared radiation from the Earth's surface. Landsat 9 utilizes TIRS-2 to acquire surface temperature data, providing valuable insights into climate change, land surface heat characteristics, etc.
+
+
+
+&lt;img src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/OLI2-TIRS-2.PNG" width="150%" style="display: block; margin: auto;" /&gt;
+[](https://www.gov.uk/government/news/environment-agency-working-day-and-night-to-reduce-flood-impact--2)
+
+
+---
+## 3 Significance of the Landsat 9 Mission
+
+Importance of Earth Observation and Environmental Monitoring:
+The Landsat 9 mission is significant in continuously monitoring changes on Earth's surface, aiding scientists and decision-makers in understanding Earth system dynamics, environmental protection, resource management, and climate change adaptation.
+
+
+
+---
+## 3 Significance of the Landsat 9 Mission
+
+
+
+Role of Data in Scientific Research and Applications:
+Data from Landsat 9 plays a crucial role in various scientific research and applications, supporting activities such as land use monitoring, agricultural production optimization, urban planning, and environmental protection.
+
+
+---
+## 4 Scientific Applications of Landsat 9
+
+Land Use Monitoring:
+Landsat 9 data can be utilized for monitoring land use and cover changes, including agricultural expansion, urbanization, forest changes, etc., providing essential insights for land resource management and planning.
+
+
+
+
+---
+## 4 Scientific Applications of Landsat 9
+
+
+
+Agriculture and Forestry:
+Agricultural and forestry managers can leverage Landsat 9 data to monitor crop growth conditions, forest cover changes, etc., optimizing agricultural production and forest resource management.
+
+
+
+---
+## 4 Scientific Applications of Landsat 9
+
+Urban Planning and Development:
+Landsat 9 data supports urban planning and development monitoring, including urban expansion, land use structure changes, etc., providing valuable information for urban planners and policymakers.
+
+
+
+---
+## 4 Scientific Applications of Landsat 9
+
+Environmental Management and Natural Resource Conservation:
+Landsat 9 data is crucial for environmental monitoring, natural resource conservation, and ecosystem management, facilitating the identification of ecologically sensitive areas, pollution monitoring, etc.
+
+
+
+
+---
+## 5 Data Distribution and Utilization of Landsat 9
+
+Data Acquisition and Processing:
+Landsat 9 data can be obtained through various channels, including NASA and USGS official websites, data archives, etc. Additionally, various data processing tools and software are available for data analysis and processing.
+
+User Support and Services:
+NASA and USGS provide various support and services for users, including data query, technical support, training, and educational resources, facilitating users in effectively utilizing Landsat 9 data.
+
+Data Application Examples:
+Landsat 9 data has widespread application examples across various fields, including land use monitoring, agricultural production, urban planning, environmental protection, etc.
+
+
+---
+## 6 Future Outlook
+
+Role and Impact of Landsat 9:
+Landsat 9 will continue to play a significant role in Earth observation, providing data support and technical assistance for scientific research, resource management, and environmental protection.
+
+Trends in Earth Observation Technology Development:
+With continuous technological advancements, Earth observation technology is expected to evolve, potentially introducing more advanced sensors and technologies, leading to breakthroughs in Earth science research.
+
+
+---
 
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
 
@@ -346,8 +478,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
 ```
 
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-48ff6dd0476e0c1e2ea8" style="width:100%;height:432px;"></div>
-<script type="application/json" data-for="htmlwidget-48ff6dd0476e0c1e2ea8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[42.0285,-93.65000000000001],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1f9ba1a722c2bf2ccb2a" style="width:100%;height:432px;"></div>
+<script type="application/json" data-for="htmlwidget-1f9ba1a722c2bf2ccb2a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[42.0285,-93.65000000000001],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -359,8 +491,8 @@ DT::datatable(
 )
 ```
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d03e3199e637fd49ed45" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-d03e3199e637fd49ed45">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Sepal.Length","targets":1},{"name":"Sepal.Width","targets":2},{"name":"Petal.Length","targets":3},{"name":"Petal.Width","targets":4},{"name":"Species","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5a8eb7b74f31aff81d63" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5a8eb7b74f31aff81d63">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Sepal.Length","targets":1},{"name":"Sepal.Width","targets":2},{"name":"Petal.Length","targets":3},{"name":"Petal.Width","targets":4},{"name":"Species","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 
