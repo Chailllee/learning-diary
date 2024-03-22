@@ -27,3 +27,7 @@ ccp_alpha is a cost complexity parameter that balances the fit and complexity of
 By increasing ccp_alpha, the model tends to remove more leaf nodes, thereby reducing the complexity of the model.
 
 The purpose of this is to prevent overfitting and improve the generalization ability of the model.
+
+## Reflection
+
+In the field of remote sensing, these concepts pose several challenges and considerations that I find intriguing. Ensuring that the models I develop have strong generalization capabilities, capable of adapting to various environmental conditions, is paramount. Additionally, assessing and addressing data impurities arising from diverse factors in remote sensing datasets presents a fascinating puzzle to solve. Moreover, navigating the balance between constructing complex models to capture nuanced data variations while avoiding overfitting is a stimulating challenge that I look forward to tackling in this course.

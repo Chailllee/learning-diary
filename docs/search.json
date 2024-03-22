@@ -327,5 +327,12 @@
     "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
     "section": "8.4 SAR data application",
     "text": "8.4 SAR data application\nAnalyze the change between two images (e.g. ratio or logarithmic ratio)\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\nSee the difference over time in the following ways:\nPixel-Wise T-Test"
+  },
+  {
+    "objectID": "wk6_classification1.html#reflection",
+    "href": "wk6_classification1.html#reflection",
+    "title": "6  Week6 - Classification-I",
+    "section": "6.2 Reflection",
+    "text": "6.2 Reflection\nIn the field of remote sensing, these concepts pose several challenges and considerations that I find intriguing. Ensuring that the models I develop have strong generalization capabilities, capable of adapting to various environmental conditions, is paramount. Additionally, assessing and addressing data impurities arising from diverse factors in remote sensing datasets presents a fascinating puzzle to solve. Moreover, navigating the balance between constructing complex models to capture nuanced data variations while avoiding overfitting is a stimulating challenge that I look forward to tackling in this course."
   }
 ]
