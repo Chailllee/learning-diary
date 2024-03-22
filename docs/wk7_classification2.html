@@ -164,6 +164,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">7.1</span> Abstract</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.2</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -196,6 +197,17 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Sub Pixel Analysis</strong>: It explains the concept of sub pixel classification, spectral mixture analysis, and linear spectral unmixing, including mathematical formulas for calculating the proportion of landcover per pixel.</p></li>
 <li><p><strong>Accuracy Assessment</strong>: The page outlines various accuracy assessment methods in remote sensing, such as producer’s accuracy, user’s accuracy, overall accuracy, and the Kappa coefficient, along with their definitions and significance.</p></li>
 </ul>
+</section>
+<section id="reflection" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.2</span> Reflection</h2>
+<p>This reminds me of my undergraduate dissertation project, where I evaluated the accuracy of fire detection models using confusion matrices.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/clipboard-2159447453.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Confusion Matrix</figcaption>
+</figure>
+</div>
+<p><strong>Firstly</strong>, I prepared the data by creating binary classification labels using both active detection thresholding and visual inspection methods as ground truth data. <strong>Next</strong>, I trained the model using a U-net neural network model on remote sensing images, applying both cross-entropy and focal loss functions. <strong>Finally</strong>, I made predictions and evaluations by <u>predicting fire pixel locations</u> in new images and <u>assessing the differences between expected and original images</u> <u>using confusion matrix</u> evaluation metrics to determine prediction accuracy. Evaluating accuracy was a crucial practical experience for me in using convolutional networks to predict fire spots in remote sensing images.</p>
 
 
 </section>

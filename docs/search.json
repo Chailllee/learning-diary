@@ -334,5 +334,12 @@
     "title": "6  Week6 - Classification-I",
     "section": "6.2 Reflection",
     "text": "6.2 Reflection\nIn the field of remote sensing, these concepts pose several challenges and considerations that I find intriguing. Ensuring that the models I develop have strong generalization capabilities, capable of adapting to various environmental conditions, is paramount. Additionally, assessing and addressing data impurities arising from diverse factors in remote sensing datasets presents a fascinating puzzle to solve. Moreover, navigating the balance between constructing complex models to capture nuanced data variations while avoiding overfitting is a stimulating challenge that I look forward to tackling in this course."
+  },
+  {
+    "objectID": "wk7_classification2.html#reflection",
+    "href": "wk7_classification2.html#reflection",
+    "title": "7  Week7 - Classification and Accuracy",
+    "section": "7.2 Reflection",
+    "text": "7.2 Reflection\nThis reminds me of my undergraduate dissertation project, where I evaluated the accuracy of fire detection models using confusion matrices.\n\n\n\nConfusion Matrix\n\n\nFirstly, I prepared the data by creating binary classification labels using both active detection thresholding and visual inspection methods as ground truth data. Next, I trained the model using a U-net neural network model on remote sensing images, applying both cross-entropy and focal loss functions. Finally, I made predictions and evaluations by predicting fire pixel locations in new images and assessing the differences between expected and original images using confusion matrix evaluation metrics to determine prediction accuracy. Evaluating accuracy was a crucial practical experience for me in using convolutional networks to predict fire spots in remote sensing images."
   }
 ]

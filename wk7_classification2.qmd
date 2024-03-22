@@ -13,3 +13,11 @@ Here is the overview of remote sensing techniques for classifying and assessing 
 -   **Sub Pixel Analysis**: It explains the concept of sub pixel classification, spectral mixture analysis, and linear spectral unmixing, including mathematical formulas for calculating the proportion of landcover per pixel.
 
 -   **Accuracy Assessment**: The page outlines various accuracy assessment methods in remote sensing, such as producer’s accuracy, user’s accuracy, overall accuracy, and the Kappa coefficient, along with their definitions and significance.
+
+## Reflection
+
+This reminds me of my undergraduate dissertation project, where I evaluated the accuracy of fire detection models using confusion matrices.
+
+![Confusion Matrix](images/clipboard-2159447453.png){fig-align="left"}
+
+**Firstly**, I prepared the data by creating binary classification labels using both active detection thresholding and visual inspection methods as ground truth data. **Next**, I trained the model using a U-net neural network model on remote sensing images, applying both cross-entropy and focal loss functions. **Finally**, I made predictions and evaluations by [predicting fire pixel locations]{.underline} in new images and [assessing the differences between expected and original images]{.underline} [using confusion matrix]{.underline} evaluation metrics to determine prediction accuracy. Evaluating accuracy was a crucial practical experience for me in using convolutional networks to predict fire spots in remote sensing images.
