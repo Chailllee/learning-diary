@@ -16,8 +16,7 @@ book:
     - wk6_classification1.qmd
     - wk7_classification2.qmd
     - wk8_SAR_data.qmd
-    - summary.qmd
-    - references.qmd
+
 
 bibliography: references.bib
 
