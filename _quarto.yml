@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - wk2_xaringen.qmd
     - wk3_RS_data.qmd
     - wk4_policy.qmd
     - wk5_GEE.qmd

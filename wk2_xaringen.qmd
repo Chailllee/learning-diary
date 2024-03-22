@@ -7,9 +7,3 @@ title: "Week 2 - Xaringen"
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan( url = "https://chailllee.github.io/learning-diary/wk2_Landsat9.html#1", ratio = "16:9")
 ```
-
-<https://github.com/Chailllee/learning-diary/blob/62fef2214d679294afa192067797f374bafd3892/wk2_Landsat9.html>
-
-<https://chailllee.github.io/learning-diary/wk2_Landsat9.html#1>
-
-{r} #\| file: wk2_Portfolio.Rmd #\| eval: false #\| echo: true #\| code-folding: true
