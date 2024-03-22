@@ -2,33 +2,53 @@
 title: "Week4 - Policy Applications"
 ---
 
-## Abstract
+## Problem: Context & Background
 
-## **1. Problem: Context & Background**
+Beijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization.
 
--   Beijing witnessed its heaviest rainfall in 140 years between 29 July and 1 August 2023.
+## 2. Policy & Case Study
 
--   Factors contributing to floods include climate conditions, landform, and urbanization.
+### 2.1 UN Sustainable Development Goals
 
--   Urbanization exacerbates flooding due to increased impervious surfaces and altered drainage systems.
+In response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs). Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.
 
-## **2. Policy & Case study**
+### 2.2 Beijing Urban Resilience Strategy
 
-### **2.1 UN Sustainable Development Goals**
+Beijing’s urban resilience strategy aims to address vulnerabilities exacerbated by urbanization. Key components include:
 
--   Prioritize wastewater treatment and sustainable urbanization.
+-   **Upgrading Emergency Disaster Prevention Technology**: Investing in advanced monitoring systems, early warning mechanisms, and real-time data analytics can significantly enhance disaster preparedness and response.
 
--   Develop climate disaster resilience strategies.
+-   **Improving Emergency Rescue Capability**: Strengthening emergency services, training first responders, and establishing efficient evacuation protocols are essential for minimizing casualties during extreme events.
 
--   Follow the Sendai Framework for Disaster Risk Reduction.
+-   **Fostering Cross-Sectoral Coordination and Collaboration**: Effective disaster management requires collaboration among government agencies, private sectors, NGOs, and local communities. Coordinated efforts can enhance overall resilience and facilitate timely responses.
 
-### **2.2 Beijing Urban Resilience Strategy**
+By implementing these strategies, Beijing can better withstand future climate-related challenges and protect its residents and infrastructure.
 
--   Upgrade emergency disaster prevention technology.
+![Connect artificial or natural ponds and lakes with nearby rivers and create above-ground and groundwater systems for drainage and collecting excess water](images/clipboard-211754604.png){fig-align="center"}
 
--   Improve emergency rescue capability.
+## Beijing Sponge City Strategy
 
--   Foster cross-sectoral coordination and collaboration.
+![](images/clipboard-959501741.png)
+
+This standard aims to scientifically and rationally compile sponge city planning, ensuring effective roles in water safety, resources, environment, ecology, and culture.
+
+-   **Issuing Bodies**: Compiled by the Beijing Urban Planning and Design Research Institute and the China Urban Planning and Design Research Institute.
+
+-   **Approval Departments**: Approved by the Beijing Municipal Planning and Natural Resources Committee and the Beijing Municipal Market Supervision Administration.
+
+-   **Implementation Date**: Came into effect on January 1, 2021.
+
+-   **Content Summary**: Outlines requirements for compiling sponge city plans within Beijing’s administrative region, covering general urban planning, district planning, detailed planning, and town planning. Also includes assessment of sponge city planning implementation.
+
+## Reflection
+
+In this course, I gained valuable insights from examining a city’s policies related to natural disaster protection. Among the new concepts I encountered, the most memorable one was the idea of a “**sponge city**.” This term vividly illustrates Beijing’s approach to mitigating flood hazards by implementing innovative measures.
+
+The concept of a sponge city emphasizes the need to absorb and manage excess water during heavy rainfall, thereby reducing the risk of flooding. Beijing’s strategy involves creating permeable surfaces, enhancing green spaces, and improving drainage systems. Witnessing how a city like Beijing tackles flood challenges left a lasting impression on me.
+
+One significant challenge in implementing urban policies is striking a balance between macro-level planning and local adjustments. How can a city retain its existing infrastructure while making targeted changes to enhance resilience? This delicate balance requires thoughtful consideration and cross-disciplinary collaboration.
+
+Overall, this course highlighted the complexities of urban resilience and the importance of forward-thinking policies in safeguarding cities against natural disasters. As I continue my studies, I’ll keep the lessons from this class in mind, especially the innovative approaches like sponge cities that can shape our urban future.
 
 ## Reference
 

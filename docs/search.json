@@ -206,8 +206,8 @@
     "objectID": "wk5_GEE.html#in-the-practical-exercises-section-i-learned",
     "href": "wk5_GEE.html#in-the-practical-exercises-section-i-learned",
     "title": "5  Week5 - Google Earth Engine",
-    "section": "5.2 In the practical exercises section, I learned",
-    "text": "5.2 In the practical exercises section, I learned\nAdvanced pixel-level image transformations: This chapter introduced how to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.\nGEE applications and data catalog: GEE can also create interactive visualization applications to showcase interesting and useful remote sensing analysis cases. GEE also provides a vast data catalog, including high-resolution satellite imagery, air pollution data, administrative boundaries, and other datasets."
+    "section": "5.3 In the practical exercises section, I learned",
+    "text": "5.3 In the practical exercises section, I learned\nAdvanced pixel-level image transformations: How to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.\nGEE applications and data catalog: GEE can also create interactive visualization applications to showcase interesting and useful remote sensing analysis cases. GEE also provides a vast data catalog, including high-resolution satellite imagery, air pollution data, administrative boundaries, and other datasets."
   },
   {
     "objectID": "wk5_GEE.html#section",
@@ -220,29 +220,29 @@
     "objectID": "wk5_GEE.html#reflection",
     "href": "wk5_GEE.html#reflection",
     "title": "5  Week5 - Google Earth Engine",
-    "section": "5.3 Reflection",
-    "text": "5.3 Reflection"
+    "section": "5.4 Reflection",
+    "text": "5.4 Reflection\nReflecting on this week’s learning, I delved into the CASA0025: Building Spatial Applications with Big Data course, which shares similarities with our remote sensing syllabus!!! The collaboration between the two courses’ instructors is a testament to the interdisciplinary nature of these fields. It’s enlightening to see how knowledge from both domains can be integrated and enhance our understanding.\nOne aspect of GEE that stands out to me as particularly user-friendly, especially for engineers and scholars, is the accessibility of remote sensing data. Unlike proprietary data, GEE offers a wealth of openly available geospatial information. All that’s required is to pinpoint the specific time and location of interest and retrieve the corresponding API. This approach to data sharing is not only equitable but also fosters a spirit of community and collaboration within the field."
   },
   {
     "objectID": "wk4_policy.html#problem-context-background",
     "href": "wk4_policy.html#problem-context-background",
     "title": "4  Week4 - Policy Applications",
-    "section": "4.2 1. Problem: Context & Background",
-    "text": "4.2 1. Problem: Context & Background\n\nBeijing witnessed its heaviest rainfall in 140 years between 29 July and 1 August 2023.\nFactors contributing to floods include climate conditions, landform, and urbanization.\nUrbanization exacerbates flooding due to increased impervious surfaces and altered drainage systems."
+    "section": "4.1 Problem: Context & Background",
+    "text": "4.1 Problem: Context & Background\nBeijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization."
   },
   {
     "objectID": "wk4_policy.html#policy-case-study",
     "href": "wk4_policy.html#policy-case-study",
     "title": "4  Week4 - Policy Applications",
-    "section": "4.3 2. Policy & Case study",
-    "text": "4.3 2. Policy & Case study\n\n4.3.1 2.1 UN Sustainable Development Goals\n\nPrioritize wastewater treatment and sustainable urbanization.\nDevelop climate disaster resilience strategies.\nFollow the Sendai Framework for Disaster Risk Reduction.\n\n\n\n4.3.2 2.2 Beijing Urban Resilience Strategy\n\nUpgrade emergency disaster prevention technology.\nImprove emergency rescue capability.\nFoster cross-sectoral coordination and collaboration."
+    "section": "4.2 2. Policy & Case Study",
+    "text": "4.2 2. Policy & Case Study\n\n4.2.1 2.1 UN Sustainable Development Goals\nIn response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs). Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.\n\n\n4.2.2 2.2 Beijing Urban Resilience Strategy\nBeijing’s urban resilience strategy aims to address vulnerabilities exacerbated by urbanization. Key components include:\n\nUpgrading Emergency Disaster Prevention Technology: Investing in advanced monitoring systems, early warning mechanisms, and real-time data analytics can significantly enhance disaster preparedness and response.\nImproving Emergency Rescue Capability: Strengthening emergency services, training first responders, and establishing efficient evacuation protocols are essential for minimizing casualties during extreme events.\nFostering Cross-Sectoral Coordination and Collaboration: Effective disaster management requires collaboration among government agencies, private sectors, NGOs, and local communities. Coordinated efforts can enhance overall resilience and facilitate timely responses.\n\nBy implementing these strategies, Beijing can better withstand future climate-related challenges and protect its residents and infrastructure.\n\n\n\nConnect artificial or natural ponds and lakes with nearby rivers and create above-ground and groundwater systems for drainage and collecting excess water"
   },
   {
     "objectID": "wk4_policy.html#reference",
     "href": "wk4_policy.html#reference",
     "title": "4  Week4 - Policy Applications",
-    "section": "4.4 Reference",
-    "text": "4.4 Reference\nBeijing Municipal Emergency Committee.(2022).Notice of the Beijing Municipal Emergency Committee on Printing and Distributing the Beijing Flood Control Emergency Plan (Revised in 2022).https://www.beijing.gov.cn/zhengce/zhengcefagui/202308/t20230807_3216832.html\nDing, X., Liao, W., Lei, X., Wang, H., Yang, J., & Wang, H. (2022). Assessment of the impact of climate change on urban flooding: A case study of Beijing, China. Journal of Water and Climate Change, 13(10), 2692–3715. https://doi.org/10.2166/wcc.2022.224\nProposals for China’s Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024)."
+    "section": "4.5 Reference",
+    "text": "4.5 Reference\nBeijing Municipal Emergency Committee.(2022).Notice of the Beijing Municipal Emergency Committee on Printing and Distributing the Beijing Flood Control Emergency Plan (Revised in 2022).https://www.beijing.gov.cn/zhengce/zhengcefagui/202308/t20230807_3216832.html\nDing, X., Liao, W., Lei, X., Wang, H., Yang, J., & Wang, H. (2022). Assessment of the impact of climate change on urban flooding: A case study of Beijing, China. Journal of Water and Climate Change, 13(10), 2692–3715. https://doi.org/10.2166/wcc.2022.224\nProposals for China’s Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024)."
   },
   {
     "objectID": "wk6_classification1.html",
@@ -271,5 +271,33 @@
     "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
     "section": "8.4 SAR data application",
     "text": "8.4 SAR data application\nAnalyze the change between two images (e.g. ratio or logarithmic ratio)\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\nSee the difference over time in the following ways:\nPixel-Wise T-Test"
+  },
+  {
+    "objectID": "wk4_policy.html#beijing-sponge-city-strategy",
+    "href": "wk4_policy.html#beijing-sponge-city-strategy",
+    "title": "4  Week4 - Policy Applications",
+    "section": "4.3 Beijing Sponge City Strategy",
+    "text": "4.3 Beijing Sponge City Strategy\n\nThis standard aims to scientifically and rationally compile sponge city planning, ensuring effective roles in water safety, resources, environment, ecology, and culture.\n\nIssuing Bodies: Compiled by the Beijing Urban Planning and Design Research Institute and the China Urban Planning and Design Research Institute.\nApproval Departments: Approved by the Beijing Municipal Planning and Natural Resources Committee and the Beijing Municipal Market Supervision Administration.\nImplementation Date: Came into effect on January 1, 2021.\nContent Summary: Outlines requirements for compiling sponge city plans within Beijing’s administrative region, covering general urban planning, district planning, detailed planning, and town planning. Also includes assessment of sponge city planning implementation."
+  },
+  {
+    "objectID": "wk4_policy.html#reflection",
+    "href": "wk4_policy.html#reflection",
+    "title": "4  Week4 - Policy Applications",
+    "section": "4.4 Reflection",
+    "text": "4.4 Reflection\nIn this course, I gained valuable insights from examining a city’s policies related to natural disaster protection. Among the new concepts I encountered, the most memorable one was the idea of a “sponge city.” This term vividly illustrates Beijing’s approach to mitigating flood hazards by implementing innovative measures.\nThe concept of a sponge city emphasizes the need to absorb and manage excess water during heavy rainfall, thereby reducing the risk of flooding. Beijing’s strategy involves creating permeable surfaces, enhancing green spaces, and improving drainage systems. Witnessing how a city like Beijing tackles flood challenges left a lasting impression on me.\nOne significant challenge in implementing urban policies is striking a balance between macro-level planning and local adjustments. How can a city retain its existing infrastructure while making targeted changes to enhance resilience? This delicate balance requires thoughtful consideration and cross-disciplinary collaboration.\nOverall, this course highlighted the complexities of urban resilience and the importance of forward-thinking policies in safeguarding cities against natural disasters. As I continue my studies, I’ll keep the lessons from this class in mind, especially the innovative approaches like sponge cities that can shape our urban future."
+  },
+  {
+    "objectID": "wk5_GEE.html#application",
+    "href": "wk5_GEE.html#application",
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.2 Application",
+    "text": "5.2 Application\nHere’s a summary of the Google Earth Engine (GEE) applications:\n\nRemote Sensing: GEE processes remote sensing data, useful for environmental and climate analysis.\nHistorical Imagery: It stores historical satellite imagery for geospatial analyses, like forest and water coverage.\nData Access: Users can access a vast database of pre-processed datasets and imagery for their own analysis1.\nReal-World Applications: GEE is applied in various fields, including vegetation analysis, land cover studies, and natural disaster management.\n\nThis picture provides an overview of how GEE can be utilized in environmental science, highlighting its capabilities and benefits.\n\n\n\nGEE applications (Meisam Amani 2020)"
+  },
+  {
+    "objectID": "wk5_GEE.html#references",
+    "href": "wk5_GEE.html#references",
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.5 References",
+    "text": "5.5 References\n• Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment.\n• Rafael Louzeiro – GIS/Environmental Specialist, Google Earth Engine – How it can be used in Environmental Science1, Jun 3, 2021, Integrate Sustainability Pty Ltd, https://www.integratesustainability.com.au/2021/06/03/google-earth-engine-how-it-can-be-used-in-environmental-science/\n• Meisam Amani, Senior Member, IEEE, Arsalan Ghorbanian , Seyed Ali Ahmadi , Mohammad Kakooei , Armin Moghimi , S. Mohammad Mirmazloumi, Student Member, IEEE, Sayyed Hamed Alizadeh Moghaddam , Sahel Mahdavi, Masoud Ghahremanloo, Saeid Parsian, Qiusheng Wu. 2020. Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE JOURNAL OF SELECTED TOPICS IN APPLIED EARTH OBSERVATIONS AND REMOTE SENSING, VOL. 13,."
   }
 ]

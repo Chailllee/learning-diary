@@ -176,8 +176,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> <strong>Summary</strong></a></li>
-  <li><a href="#in-the-practical-exercises-section-i-learned" id="toc-in-the-practical-exercises-section-i-learned" class="nav-link" data-scroll-target="#in-the-practical-exercises-section-i-learned"><span class="header-section-number">5.2</span> In the practical exercises section, I learned</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.2</span> Application</a></li>
+  <li><a href="#in-the-practical-exercises-section-i-learned" id="toc-in-the-practical-exercises-section-i-learned" class="nav-link" data-scroll-target="#in-the-practical-exercises-section-i-learned"><span class="header-section-number">5.3</span> In the practical exercises section, I learned</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.4</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.5</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -201,7 +203,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This week I learned about the course CASA0025: Building Spatial Applications with Big Data, which overlaps with the teaching content of our remote sensing course. I believe that the collaboration between the two instructors breaks down the barriers between the two disciplines, and mutual supplementation of knowledge from each other’s courses is meaningful.</p>
 <section id="summary" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> <strong>Summary</strong></h2>
 <p>The theoretical part of the course mainly introduced the basic concepts, data structures, operations, and application cases of Google Earth Engine (GEE).</p>
@@ -209,13 +210,38 @@ ul.task-list li input[type="checkbox"] {
 <p>Data structure of GEE: Data in GEE is divided into two types: Images and Features, corresponding to raster and vector data, respectively. Images and Features can form Collections, representing stacks of multiple images or features. Data in GEE exists in the form of objects, each with its own properties and methods.</p>
 <p>Operations in GEE: GEE uses the JavaScript language for coding, which can be run in the browser. The code in GEE is divided into client-side and server-side, with the client-side code mainly used for interface control and interaction, and the server-side code mainly used for data processing and analysis. Data processing in GEE mainly relies on reducers, which can perform various statistical, analytical, and transformation operations on images or features. GEE also provides some advanced features such as regression, joining, and machine learning.</p>
 </section>
-<section id="in-the-practical-exercises-section-i-learned" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="in-the-practical-exercises-section-i-learned"><span class="header-section-number">5.2</span> In the practical exercises section, I learned</h2>
-<p>Advanced pixel-level image transformations: This chapter introduced how to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.</p>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+<p>Here’s a summary of the Google Earth Engine (GEE) applications:</p>
+<ul>
+<li><p><strong>Remote Sensing</strong>: GEE processes remote sensing data, useful for environmental and climate analysis.</p></li>
+<li><p><strong>Historical Imagery</strong>: It stores historical satellite imagery for geospatial analyses, like forest and water coverage.</p></li>
+<li><p><strong>Data Access</strong>: Users can access a vast database of pre-processed datasets and imagery for their own analysis1.</p></li>
+<li><p><strong>Real-World Applications</strong>: GEE is applied in various fields, including vegetation analysis, land cover studies, and natural disaster management.</p></li>
+</ul>
+<p>This picture provides an overview of how GEE can be utilized in environmental science, highlighting its capabilities and benefits.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2121080514.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption class="figure-caption">GEE applications (Meisam Amani 2020)</figcaption>
+</figure>
+</div>
+</section>
+<section id="in-the-practical-exercises-section-i-learned" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="in-the-practical-exercises-section-i-learned"><span class="header-section-number">5.3</span> In the practical exercises section, I learned</h2>
+<p>Advanced pixel-level image transformations: How to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.</p>
 <p>GEE applications and data catalog: GEE can also create interactive visualization applications to showcase interesting and useful remote sensing analysis cases. GEE also provides a vast data catalog, including high-resolution satellite imagery, air pollution data, administrative boundaries, and other datasets.</p>
 </section>
-<section id="reflection" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<section id="reflection" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.4</span> Reflection</h2>
+<p>Reflecting on this week’s learning, I delved into the <strong>CASA0025: Building Spatial Applications with Big Data</strong> course, which shares similarities with our remote sensing syllabus!!! The collaboration between the two courses’ instructors is a testament to the interdisciplinary nature of these fields. It’s enlightening to see how knowledge from both domains can be integrated and enhance our understanding.</p>
+<p>One aspect of <strong>GEE</strong> that stands out to me as particularly user-friendly, especially for engineers and scholars, is the accessibility of remote sensing data. Unlike proprietary data, GEE offers a wealth of openly available geospatial information. All that’s required is to pinpoint the specific time and location of interest and retrieve the corresponding API. This approach to data sharing is not only equitable but also fosters a spirit of community and collaboration within the field.</p>
+</section>
+<section id="references" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="references"><span class="header-section-number">5.5</span> References</h2>
+<p>• Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., &amp; Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment.</p>
+<p>• Rafael Louzeiro – GIS/Environmental Specialist, Google Earth Engine – How it can be used in Environmental Science1, Jun 3, 2021, Integrate Sustainability Pty Ltd, <a href="https://www.integratesustainability.com.au/2021/06/03/google-earth-engine-how-it-can-be-used-in-environmental-science/" class="uri">https://www.integratesustainability.com.au/2021/06/03/google-earth-engine-how-it-can-be-used-in-environmental-science/</a></p>
+<p>• Meisam Amani, Senior Member, IEEE, Arsalan Ghorbanian , Seyed Ali Ahmadi , Mohammad Kakooei , Armin Moghimi , S. Mohammad Mirmazloumi, Student Member, IEEE, Sayyed Hamed Alizadeh Moghaddam , Sahel Mahdavi, Masoud Ghahremanloo, Saeid Parsian, Qiusheng Wu. 2020. Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE JOURNAL OF SELECTED TOPICS IN APPLIED EARTH OBSERVATIONS AND REMOTE SENSING, VOL. 13,.</p>
 
 
 </section>
