@@ -2,8 +2,6 @@
 title: "Week5 - Google Earth Engine"
 ---
 
-This week I learned about the course CASA0025: Building Spatial Applications with Big Data, which overlaps with the teaching content of our remote sensing course. I believe that the collaboration between the two instructors breaks down the barriers between the two disciplines, and mutual supplementation of knowledge from each other's courses is meaningful.
-
 ## **Summary**
 
 The theoretical part of the course mainly introduced the basic concepts, data structures, operations, and application cases of Google Earth Engine (GEE).
@@ -16,8 +14,9 @@ Operations in GEE: GEE uses the JavaScript language for coding, which can be run
 
 ## In the practical exercises section, I learned
 
-Advanced pixel-level image transformations: This chapter introduced how to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.
+Advanced pixel-level image transformations: How to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.
 
 GEE applications and data catalog: GEE can also create interactive visualization applications to showcase interesting and useful remote sensing analysis cases. GEE also provides a vast data catalog, including high-resolution satellite imagery, air pollution data, administrative boundaries, and other datasets.
 
 ## Reflection
+This week I learned about the course CASA0025: Building Spatial Applications with Big Data, which overlaps with the teaching content of our remote sensing course. I believe that the collaboration between the two instructors breaks down the barriers between the two disciplines, and mutual supplementation of knowledge from each other's courses is meaningful.
