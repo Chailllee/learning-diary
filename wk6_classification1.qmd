@@ -20,6 +20,8 @@ During pruning, we aim to retain leaf nodes that positively contribute to the mo
 
 When we remove a leaf node, the Gini impurity increases because we lose the purity associated with that leaf node.
 
+![Representation of a decision tree before and after being processed by a pruning algorithm, where the decision nodes (light blue) classify samples into 2 classes (green and red). The red dividing lines represent the pruning step.](images/clipboard-909472583.png){fig-align="center"}
+
 ### Cost Complexity:
 
 ccp_alpha is a cost complexity parameter that balances the fit and complexity of the model during pruning.
