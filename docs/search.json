@@ -25,7 +25,7 @@
     "href": "wk5_GEE.html#summary",
     "title": "5  Week5 - Google Earth Engine",
     "section": "5.1 Summary",
-    "text": "5.1 Summary\n课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。\n\nGEE 的特点：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。\nGEE 的数据结构：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。\nGEE 的操作方法：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。\n\n课程实践练习部分中可以了解到：\n\n高级像素级图像变换：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。\nGEE应用程序和数据目录：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。"
+    "text": "5.1 Summary\nThe theoretical part of the course mainly introduced the basic concepts, data structures, operations, and application cases of Google Earth Engine (GEE).\nCharacteristics of GEE: GEE is a geospatial processing service that utilizes cloud servers to store and analyze massive amounts of remote sensing imagery and geographic data, enabling rapid and large-scale monitoring and simulation of changes on the Earth’s surface.\nData structure of GEE: Data in GEE is divided into two types: Images and Features, corresponding to raster and vector data, respectively. Images and Features can form Collections, representing stacks of multiple images or features. Data in GEE exists in the form of objects, each with its own properties and methods.\nOperations in GEE: GEE uses the JavaScript language for coding, which can be run in the browser. The code in GEE is divided into client-side and server-side, with the client-side code mainly used for interface control and interaction, and the server-side code mainly used for data processing and analysis. Data processing in GEE mainly relies on reducers, which can perform various statistical, analytical, and transformation operations on images or features. GEE also provides some advanced features such as regression, joining, and machine learning."
   },
   {
     "objectID": "wk5_GEE.html#whats-gee",
@@ -180,5 +180,47 @@
     "title": "References",
     "section": "",
     "text": "López-Puigdollers, Dan, Gonzalo Mateo-García, and Luis Gómez-Chova.\n2021. “Benchmarking Deep Learning Models for Cloud Detection in\nLandsat-8 and Sentinel-2 Images.” Remote Sensing 13 (5):\n992. https://doi.org/10.3390/rs13050992."
+  },
+  {
+    "objectID": "wk2_xaringen.html#xaringen",
+    "href": "wk2_xaringen.html#xaringen",
+    "title": "2  Week 2 - Xaringen",
+    "section": "2.1 Xaringen",
+    "text": "2.1 Xaringen"
+  },
+  {
+    "objectID": "wk3_RS_data.html#summary-of-common-remote-sensing-indices",
+    "href": "wk3_RS_data.html#summary-of-common-remote-sensing-indices",
+    "title": "3  Week3 - Remote Sensing Data",
+    "section": "3.2 Summary of Common Remote Sensing Indices",
+    "text": "3.2 Summary of Common Remote Sensing Indices\nSummary of Common Remote Sensing Indices\nIn remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:\n\nNormalized Difference Vegetation Index (NDVI): Used to assess vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance.\n\n\\[NDVI= \\frac{NIR-Red}{NIR+Red}\\]\n\nNormalized Difference Water Index (NDWI): Utilized to identify water bodies by comparing the difference between green and near-infrared band reflectance.\n\n\\[NDWI = \\frac{(Green - NIR)}{(Green + NIR)}\\]\n\nNormalized Difference Built-up Index (NDBI): Employed to detect built-up areas by comparing the difference between near-infrared and shortwave infrared band reflectance.\n\n\\[NDBI = \\frac{(SWIR - NIR)}{(SWIR + NIR)}\\]\n\nSoil Adjusted Vegetation Index (SAVI): Similar to NDVI but adjusts for soil background effects, particularly in areas with sparse vegetation cover.\n\n\\[SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)} \\] where ( L ) is the soil adjustment factor.\n\nEnhanced Vegetation Index (EVI): An enhanced version of NDVI that incorporates blue and red-edge bands, providing better sensitivity to high-density vegetation areas.\n\n\\[ EVI = G \\times \\frac{(NIR - Red)}{(NIR + C_1 \\times Red - C_2 \\times Blue + L)} \\] where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment.\n\nSoil Moisture Index (SMI): Used to estimate soil moisture content and soil wetness conditions in agricultural and hydrological studies.\n\n\\[ SMI = \\frac{(NIR + SWIR)}{2} \\]\n\nLand Surface Temperature and Vegetation Index (LSTVI): Combines information from land surface temperature (LST) and vegetation indices to analyze urban heat island effects and land use changes.\n\n\\[LSTVI = \\frac{(Tb - NDVI)}{(Tb + NDVI)} \\] where ( Tb ) is the land surface temperature.\nThese indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments."
+  },
+  {
+    "objectID": "wk3_RS_data.html#reflection",
+    "href": "wk3_RS_data.html#reflection",
+    "title": "3  Week3 - Remote Sensing Data",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\nDuring my undergraduate dissertation project, I encountered challenges in processing remote sensing data due to significant smoke obscuring vegetation on the land surface. It was my first experience using Python to convert remote sensing images into multidimensional numerical matrices, where each dimension corresponded to different spectral bands of the original remote sensing data. Interestingly, the principle behind performing band calculations in Python was essentially the same as that of commonly used remote sensing index formulas. I realized that applying index calculation formulas in Python involved performing arithmetic operations such as addition, subtraction, multiplication, and division on these multidimensional numerical matrices.\nSo this is an example of the band processing I did in my undergraduate program to make the forest fire point more prominent in the image:\n\n\n\nComparison before and after band optimization\n\n\nThis realization underscores the significance of hands-on practice and theoretical knowledge integration in effectively utilizing remote sensing techniques for various environmental analyses and research endeavors."
+  },
+  {
+    "objectID": "wk5_GEE.html#in-the-practical-exercises-section-i-learned",
+    "href": "wk5_GEE.html#in-the-practical-exercises-section-i-learned",
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.2 In the practical exercises section, I learned",
+    "text": "5.2 In the practical exercises section, I learned\nAdvanced pixel-level image transformations: This chapter introduced how to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.\nGEE applications and data catalog: GEE can also create interactive visualization applications to showcase interesting and useful remote sensing analysis cases. GEE also provides a vast data catalog, including high-resolution satellite imagery, air pollution data, administrative boundaries, and other datasets."
+  },
+  {
+    "objectID": "wk5_GEE.html#section",
+    "href": "wk5_GEE.html#section",
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.3 ",
+    "text": "5.3"
+  },
+  {
+    "objectID": "wk5_GEE.html#reflection",
+    "href": "wk5_GEE.html#reflection",
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.4 Reflection",
+    "text": "5.4 Reflection"
   }
 ]

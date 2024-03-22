@@ -13,7 +13,7 @@ output:
       countIncrementalSlides: false
       
 ---
-class: inverse, center, title-slide, middle
+class: center, title-slide, bottom
 
 background-image: url("https://th.bing.com/th/id/OIP.bymqEIDKbTreoK_4_0JyzgHaEK?rs=1&pid=ImgDetMain")
 background-size: cover

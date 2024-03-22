@@ -2,7 +2,7 @@
 title: "Week 2 - Xaringen"
 ---
 
-## Abstract
+## Xaringen
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan( url = "https://chailllee.github.io/learning-diary/wk2_Landsat9.html#1", ratio = "16:9")

@@ -2,22 +2,22 @@
 title: "Week5 - Google Earth Engine"
 ---
 
-本周得知**CASA0025: Building Spatial Applications with Big Data** 这门课和我们RS的教学内容开始有交集的部分，我觉得两位主讲老师的教学合作打破了两个学科之间的壁垒，从彼此的课程的知识进行互相补充是很有意义的。
+This week I learned about the course CASA0025: Building Spatial Applications with Big Data, which overlaps with the teaching content of our remote sensing course. I believe that the collaboration between the two instructors breaks down the barriers between the two disciplines, and mutual supplementation of knowledge from each other's courses is meaningful.
 
-## Summary
+## **Summary**
 
-课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。
+The theoretical part of the course mainly introduced the basic concepts, data structures, operations, and application cases of Google Earth Engine (GEE).
 
--   **GEE 的特点**：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。
+Characteristics of GEE: GEE is a geospatial processing service that utilizes cloud servers to store and analyze massive amounts of remote sensing imagery and geographic data, enabling rapid and large-scale monitoring and simulation of changes on the Earth's surface.
 
--   **GEE 的数据结构**：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。
+Data structure of GEE: Data in GEE is divided into two types: Images and Features, corresponding to raster and vector data, respectively. Images and Features can form Collections, representing stacks of multiple images or features. Data in GEE exists in the form of objects, each with its own properties and methods.
 
--   **GEE 的操作方法**：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。
+Operations in GEE: GEE uses the JavaScript language for coding, which can be run in the browser. The code in GEE is divided into client-side and server-side, with the client-side code mainly used for interface control and interaction, and the server-side code mainly used for data processing and analysis. Data processing in GEE mainly relies on reducers, which can perform various statistical, analytical, and transformation operations on images or features. GEE also provides some advanced features such as regression, joining, and machine learning.
 
-课程实践练习部分中可以了解到：
+## In the practical exercises section, I learned
 
--   **高级像素级图像变换**：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。
+Advanced pixel-level image transformations: This chapter introduced how to perform Principal Component Analysis (PCA) and Tasseled Cap transformations in GEE, which are methods for dimensionality reduction and feature extraction used for image classification and change detection in remote sensing imagery.
 
--   **GEE应用程序和数据目录**：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。
+GEE applications and data catalog: GEE can also create interactive visualization applications to showcase interesting and useful remote sensing analysis cases. GEE also provides a vast data catalog, including high-resolution satellite imagery, air pollution data, administrative boundaries, and other datasets.
 
-## What's GEE
+## Reflection
