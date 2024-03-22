@@ -23,16 +23,16 @@
   {
     "objectID": "wk5_GEE.html#summary",
     "href": "wk5_GEE.html#summary",
-    "title": "4  Week5 - Google Earth Engine",
-    "section": "4.1 Summary",
-    "text": "4.1 Summary\n课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。\n\nGEE 的特点：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。\nGEE 的数据结构：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。\nGEE 的操作方法：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。\n\n课程实践练习部分中可以了解到：\n\n高级像素级图像变换：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。\nGEE应用程序和数据目录：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。"
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary\n课程理论部分主要介绍了 GEE 的基本概念、数据结构、操作方法和应用案例。\n\nGEE 的特点：GEE 是一个地理空间处理服务，可以利用云端服务器存储和分析海量的遥感影像和地理数据，实现快速、大规模的地球表面变化监测和模拟。\nGEE 的数据结构：GEE 中的数据分为两种类型：影像（Image）和要素（Feature），分别对应栅格数据和矢量数据。影像和要素可以组成集合（Collection），表示多个影像或要素的堆叠。GEE 中的数据都是以对象（Object）的形式存在，每个对象都有自己的属性（Property）和方法（Method）。\nGEE 的操作方法：GEE 使用 JavaScript 语言编写代码，可以在浏览器中运行。GEE 中的代码分为客户端和服务器端，客户端的代码主要用于控制界面和交互，服务器端的代码主要用于处理数据和分析。GEE 中的数据处理主要依赖于归约器（Reducer），它们可以对影像或要素进行各种统计、分析和转换操作。GEE 还提供了一些高级的功能，如回归、连接、机器学习等。\n\n课程实践练习部分中可以了解到：\n\n高级像素级图像变换：本章介绍了如何在GEE中进行主成分分析（PCA）和缨帽变换（tasselled cap），这些是一种降维和特征提取的方法，可以用于遥感图像的分类和变化检测。\nGEE应用程序和数据目录：GEE还可以创建交互式的可视化应用程序，展示一些有趣和有用的遥感分析案例。GEE还提供了一个庞大的数据目录，包括高分辨率的卫星图像、空气污染物、行政边界等数据集。"
   },
   {
     "objectID": "wk5_GEE.html#whats-gee",
     "href": "wk5_GEE.html#whats-gee",
-    "title": "4  Week5 - Google Earth Engine",
-    "section": "4.2 What’s GEE",
-    "text": "4.2 What’s GEE"
+    "title": "5  Week5 - Google Earth Engine",
+    "section": "5.2 What’s GEE",
+    "text": "5.2 What’s GEE"
   },
   {
     "objectID": "wk7_classification1.html#overfiting",
@@ -51,14 +51,14 @@
   {
     "objectID": "wk9_SAR_data.html#abstract",
     "href": "wk9_SAR_data.html#abstract",
-    "title": "7  Week9 - Synthetic Aperture Radar (SAR) data",
-    "section": "7.1 Abstract",
-    "text": "7.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
+    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "8.1 Abstract",
+    "text": "8.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "8  Summary",
+    "title": "9  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
   },
@@ -93,16 +93,16 @@
   {
     "objectID": "wk9_SAR_data.html#difference-of-other-sar",
     "href": "wk9_SAR_data.html#difference-of-other-sar",
-    "title": "7  Week9 - Synthetic Aperture Radar (SAR) data",
-    "section": "7.2 Difference of other SAR",
-    "text": "7.2 Difference of other SAR\n\n\n\n\n\n\n\n\n\nSAR\nInSAR\nDInSAR\nPSInSAR\n\n\n\n\nSynthetic Aperture Radar\nInterferometric Synthetic Aperture Radar\nDifferential Interferometric Synthetic Aperture Radar\nPersistent Scatterer Interferometric SAR\n\n\n\nA radar system capable of producing high-resolution images.\nUses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.\nUsed for surface observations such as land use, topography, and forest cover.\n\n\nAnalyzes surface deformation by exploiting the phase difference between two remote sensing images.\nCalculates the deformation at each pixel on the ground surface between two observations.\nReveals elevation and deformation information.\n\n\nBuilds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.\nSensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.\nUtilizes two SAR images and external topographic data to measure subtle surface deformations.\n\n\nModels and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.\nReveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes."
+    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "8.2 Difference of other SAR",
+    "text": "8.2 Difference of other SAR\n\n\n\n\n\n\n\n\n\nSAR\nInSAR\nDInSAR\nPSInSAR\n\n\n\n\nSynthetic Aperture Radar\nInterferometric Synthetic Aperture Radar\nDifferential Interferometric Synthetic Aperture Radar\nPersistent Scatterer Interferometric SAR\n\n\n\nA radar system capable of producing high-resolution images.\nUses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.\nUsed for surface observations such as land use, topography, and forest cover.\n\n\nAnalyzes surface deformation by exploiting the phase difference between two remote sensing images.\nCalculates the deformation at each pixel on the ground surface between two observations.\nReveals elevation and deformation information.\n\n\nBuilds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.\nSensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.\nUtilizes two SAR images and external topographic data to measure subtle surface deformations.\n\n\nModels and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.\nReveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes."
   },
   {
     "objectID": "wk9_SAR_data.html#sar数据的应用",
     "href": "wk9_SAR_data.html#sar数据的应用",
-    "title": "7  Week9 - Synthetic Aperture Radar (SAR) data",
-    "section": "7.3 SAR数据的应用",
-    "text": "7.3 SAR数据的应用\n分析两个图像之间的变化（例如比率或对数比率）\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\n通过以下方式查看随时间变化的差异：\nPixel-Wise T-Test"
+    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "section": "8.3 SAR数据的应用",
+    "text": "8.3 SAR数据的应用\n分析两个图像之间的变化（例如比率或对数比率）\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\n通过以下方式查看随时间变化的差异：\nPixel-Wise T-Test"
   },
   {
     "objectID": "intro.html#basic-concepts-and-principles-of-remote-sensing",
@@ -137,42 +137,42 @@
     "href": "wk2_xaringen.html#abstract",
     "title": "2  Week 2 - Xaringen",
     "section": "2.1 Abstract",
-    "text": "2.1 Abstract\n\n\n\n\n\n\n\n\n\n---\ntitle: \"Presentation Ninja\"\nsubtitle: \"⚔&lt;br/&gt;with xaringan\"\nauthor: \"Yihui Xie\"\ninstitute: \"RStudio, PBC\"\ndate: \"2016/12/12 (updated: `r Sys.Date()`)\"\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nbackground-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)\n\n```{r setup, include=FALSE}\noptions(htmltools.dir.version = FALSE)\n???\nImage credit: Wikimedia Commons\nclass: inverse, center, middle\n\n\n\n\n\n4 Hello World\n\n\n\n\n\nCreate a new R Markdown document from the menu File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation;1\n\n\n\nClick the Knit button to compile it;\n\n\n\nor use the RStudio Addin2 “Infinite Moon Reader” to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.\n\n\n\n\n\n5 Hello Ninja\n\n\nThe remark.js library;\nThe xaringan package;\n\n\n\n\n\n6 remark.js\n\n\ncreate a new slide (Markdown syntax* and slide properties);\nformat a slide (e.g. text alignment);\nconfigure the slideshow;\nand use the presentation (keyboard shortcuts).\n\n\n\n\n\n\n7 Using xaringan\n\n\n\n8 xaringan\n\n---\ntitle: \"A Cool Presentation\"\noutput:\n  xaringan::moon_reader:\n    yolo: true\n    nature:\n      autoplay: 30000\n---\n\n\n\n\n9 remark.js vs xaringan\n\n\n\nPlain Markdown;\nWrite JavaScript to autoplay slides;\nManually configure MathJax;\nHighlight code with *;\nEdit Markdown source and refresh browser to see updated slides; ]\n\n\n\nR Markdown (can embed R/other code chunks);\nProvide an option autoplay;\nMathJax just works;*\nHighlight code with {{}};\nThe RStudio addin “Infinite Moon Reader” automatically refreshes slides on changes; ]\n\n\n\n\n\n10 Math Expressions\n\n$$\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i$$\n\n\n\nThe source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting $$ must appear in the very beginning of a line, followed immediately by a non-space character, and the ending $$ must be at the end of a line, led by a non-space character;\nThere should not be spaces after the opening $ or before the closing $.\nMath does not work on the title slide (see #61 for a workaround).\n\n\n\n\n11 R Code\n\n\n\n\n12 R Plots\n\n\n\n\n13 Tables\n\nknitr::kable(head(iris), format = 'html')\n\n\n\n14 HTML Widgets\n\n\n\n\n\n\n\n\n\n\n15 Some Tips\n\nDo not forget to try the yolo option of xaringan::moon_reader.\noutput:\n  xaringan::moon_reader:\n    yolo: true\n\n\n\n\n16 Some Tips\n\nSlides can be automatically played if you set the autoplay option under nature, e.g. go to the next slide every 30 seconds in a lightning talk:\noutput:\n  xaringan::moon_reader:\n    nature:\n      autoplay: 30000\nIf you want to restart the play after it reaches the last slide, you may set the sub-option loop to TRUE, e.g.,\noutput:\n  xaringan::moon_reader:\n    nature:\n      autoplay:\n        interval: 30000\n        loop: true\n\n\n\n\n17 Some Tips\n\nA countdown timer can be added to every page of the slides using the countdown option under nature, e.g. if you want to spend one minute on every page when you give the talk, you can set:\noutput:\n  xaringan::moon_reader:\n    nature:\n      countdown: 60000\nThen you will see a timer counting down from 01:00, to 00:59, 00:58, … When the time is out, the timer will continue but the time turns red.\n\n\n\n\n18 Some Tips\n\nThe title slide is created automatically by xaringan, but it is just another remark.js slide added before your other slides.\nThe title slide is set to class: center, middle, inverse, title-slide by default. You can change the classes applied to the title slide with the titleSlideClass option of nature (title-slide is always applied).\noutput:\n  xaringan::moon_reader:\n    nature:\n      titleSlideClass: [top, left, inverse]\n\n\n\nIf you’d like to create your own title slide, disable xaringan’s title slide with the seal = FALSE option of moon_reader.\noutput:\n  xaringan::moon_reader:\n    seal: false\n\n\n\n\n19 Some Tips\n\nThere are several ways to build incremental slides. See this presentation for examples.\nThe option highlightLines: true of nature will highlight code lines that start with *, or are wrapped in {{ }}, or have trailing comments #&lt;&lt;;\noutput:\n  xaringan::moon_reader:\n    nature:\n      highlightLines: true\nSee examples on the next page.\n\n\n\n\n20 Some Tips\n\n```r\nif (TRUE) {\n** message(\"Very important!\")\n}\n```\n\nif (TRUE) {\n* message(\"Very important!\")\n}\n\n\n`r ''````{r tidy=FALSE}\nif (TRUE) {\n*{{ message(\"Very important!\") }}\n}\n```\n\n\n\n\n\n\n21 Some Tips\n\n`r ''````{r tidy=FALSE}\nlibrary(ggplot2)\nggplot(mtcars) + \n  aes(mpg, disp) + \n  geom_point() +   #&lt;&lt;\n  geom_smooth()    #&lt;&lt;\n```\n\n\n\n\n\n22 Some Tips\n\n`r ''````{r, highlight.output=c(1, 3)}\nhead(iris)\n```\n\n\n\n\n\n23 Some Tips\n\nTo make slides work offline, you need to download a copy of remark.js in advance, because xaringan uses the online version by default (see the help page ?xaringan::moon_reader).\nYou can use xaringan::summon_remark() to download the latest or a specified version of remark.js. By default, it is downloaded to libs/remark-latest.min.js.\nThen change the chakra option in YAML to point to this file, e.g.\noutput:\n  xaringan::moon_reader:\n    chakra: libs/remark-latest.min.js\nIf you used Google fonts in slides (the default theme uses Yanone Kaffeesatz, Droid Serif, and Source Code Pro), they won’t work offline unless you download or install them locally. The Heroku app google-webfonts-helper can help you download fonts and generate the necessary CSS.\n\n\n\n\n24 Macros\n\nremark.js allows users to define custom macros (JS functions) that can be applied to Markdown text using the syntax ![:macroName arg1, arg2, ...] or ![:macroName arg1, arg2, ...](this). For example, before remark.js initializes the slides, you can define a macro named scale:\nremark.macros.scale = function (percentage) {\n  var url = this;\n  return '&lt;img src=\"' + url + '\" style=\"width: ' + percentage + '\" /&gt;';\n};\nThen the Markdown text\n![:scale 50%](image.jpg)\nwill be translated to\n&lt;img src=\"image.jpg\" style=\"width: 50%\" /&gt;\n\n\n\n\n25 Macros (continued)\n\nTo insert macros in xaringan slides, you can use the option beforeInit under the option nature, e.g.,\noutput:\n  xaringan::moon_reader:\n    nature:\n      beforeInit: \"macros.js\"\nYou save your remark.js macros in the file macros.js.\nThe beforeInit option can be used to insert arbitrary JS code before remark.create(). Inserting macros is just one of its possible applications.\n\n\n\n\n26 CSS\n\n\n\n\n\n27 CSS\n\n@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);\n\n.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }\n\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"ubuntu-mono.css\"]\n\n\n\n\n\n28 CSS (with Sass)\n\n$mycolor: #ff0000; \n.remark-slide-content &gt; h1 { color: $mycolor; }\n.remark-slide-content strong { color: $mycolor; }\n\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"mytheme.scss\"]\n\n\n\n\n29 Themes\n\n\n\n\n\n30 Themes\n\noutput:\n  xaringan::moon_reader:\n    css: [default, metropolis, metropolis-fonts]\n\n\n\n\n31 Sharingan\n\n\nthe “Eye of Insight”\nthe “Eye of Hypnotism”\n\n\n\n\n\n\n\n\n32 Naruto terminology\n\n\nSharingan (写輪眼; the package name)\nThe moon reader (月読; an attractive R Markdown output format)\nChakra (查克拉; the path to the remark.js library, which is the power to drive the presentation)\nNature transformation (性質変化; transform the chakra by setting different options)\nThe infinite moon reader (無限月読; start a local web server to continuously serve your slides)\nThe summoning technique (download remark.js from the web)\n\n\n\n\n\n\n33 Hand seals (印)\n\n\n\n\n\n\n34 Thanks!"
+    "text": "2.1 Abstract"
   },
   {
     "objectID": "wk3_RS_data.html#abstract",
     "href": "wk3_RS_data.html#abstract",
-    "title": "2  Week3 - Remote Sensing Data",
-    "section": "2.1 Abstract",
-    "text": "2.1 Abstract\nThis lecture mainly provides detailed information on remote sensing cities and environments, especially on the use and processing of remote sensing data, and introduces the correction methods of remote sensing data, including geometric, atmospheric, orthographic/topographic correction and radiometric correction. Prior to this, data processing is required, including data linking and enhancement such as feathering, image enhancement, and other enhancement techniques. In addition to this, this lesson introduces remote sensing technology, explaining the different types of remote sensing sensors, such as push-sweep and scan sensors, and how they work. Practical Guide: Provides a guide on how to use presentation slides, including the use of search tools and the drawing function on slides."
+    "title": "3  Week3 - Remote Sensing Data",
+    "section": "3.1 Abstract",
+    "text": "3.1 Abstract\nThis lecture mainly provides detailed information on remote sensing cities and environments, especially on the use and processing of remote sensing data, and introduces the correction methods of remote sensing data, including geometric, atmospheric, orthographic/topographic correction and radiometric correction. Prior to this, data processing is required, including data linking and enhancement such as feathering, image enhancement, and other enhancement techniques. In addition to this, this lesson introduces remote sensing technology, explaining the different types of remote sensing sensors, such as push-sweep and scan sensors, and how they work. Practical Guide: Provides a guide on how to use presentation slides, including the use of search tools and the drawing function on slides."
   },
   {
     "objectID": "wk4_policy.html#abstract",
     "href": "wk4_policy.html#abstract",
-    "title": "3  Week4 - Policy Applications",
-    "section": "3.1 Abstract",
-    "text": "3.1 Abstract"
+    "title": "4  Week4 - Policy Applications",
+    "section": "4.1 Abstract",
+    "text": "4.1 Abstract"
   },
   {
     "objectID": "wk6_classification1.html#overfiting",
     "href": "wk6_classification1.html#overfiting",
-    "title": "5  Week7 - Classification-I",
-    "section": "5.1 Overfiting",
-    "text": "5.1 Overfiting\n\nTree score = SSR + tree penalty (alpha) * T (number of leaves)\n\n对于Tree score公式，为啥去掉越多leaf, alpha越大？\n在决策树的剪枝过程中，我们使用一个参数称为ccp_alpha（cost complexity parameter）来控制剪枝的程度。这个参数的值越大，意味着我们更倾向于剪掉更多的叶节点，从而简化树的结构。\n让我们来理解一下为什么去掉越多的叶节点，ccp_alpha 就越大：\n\n基尼杂质和树的复杂度：\n\n基尼杂质是用来衡量数据集纯度的指标，它越小表示数据集的纯度越高。\n在剪枝过程中，我们希望保留那些对模型性能有积极影响的叶节点，同时减少模型的复杂度。\n当我们去掉一个叶节点时，基尼杂质会增加，因为我们丧失了这个叶节点的纯度。\n\n成本复杂度：\n\nccp_alpha 是一个成本复杂度参数，它在剪枝过程中平衡了模型的拟合程度和复杂度。\n当我们增大 ccp_alpha 时，模型更倾向于剪掉更多的叶节点，从而减少模型的复杂度。\n这样做的目的是防止过拟合，提高模型的泛化能力。\nYoutube video\nHow to Prune Regression Trees"
+    "title": "6  Week7 - Classification-I",
+    "section": "6.1 Overfiting",
+    "text": "6.1 Overfiting\n\nTree score = SSR + tree penalty (alpha) * T (number of leaves)\n\n对于Tree score公式，为啥去掉越多leaf, alpha越大？\n在决策树的剪枝过程中，我们使用一个参数称为ccp_alpha（cost complexity parameter）来控制剪枝的程度。这个参数的值越大，意味着我们更倾向于剪掉更多的叶节点，从而简化树的结构。\n让我们来理解一下为什么去掉越多的叶节点，ccp_alpha 就越大：\n\n基尼杂质和树的复杂度：\n\n基尼杂质是用来衡量数据集纯度的指标，它越小表示数据集的纯度越高。\n在剪枝过程中，我们希望保留那些对模型性能有积极影响的叶节点，同时减少模型的复杂度。\n当我们去掉一个叶节点时，基尼杂质会增加，因为我们丧失了这个叶节点的纯度。\n\n成本复杂度：\n\nccp_alpha 是一个成本复杂度参数，它在剪枝过程中平衡了模型的拟合程度和复杂度。\n当我们增大 ccp_alpha 时，模型更倾向于剪掉更多的叶节点，从而减少模型的复杂度。\n这样做的目的是防止过拟合，提高模型的泛化能力。\nYoutube video\nHow to Prune Regression Trees"
   },
   {
     "objectID": "wk6_classification1.html#random-forest",
     "href": "wk6_classification1.html#random-forest",
-    "title": "5  Week7 - Classification-I",
-    "section": "5.2 Random Forest",
-    "text": "5.2 Random Forest"
+    "title": "6  Week7 - Classification-I",
+    "section": "6.2 Random Forest",
+    "text": "6.2 Random Forest"
   },
   {
     "objectID": "wk7_classification2.html#abstract",
     "href": "wk7_classification2.html#abstract",
-    "title": "6  Week7 - Classification and Accuracy",
-    "section": "6.1 Abstract",
-    "text": "6.1 Abstract"
+    "title": "7  Week7 - Classification and Accuracy",
+    "section": "7.1 Abstract",
+    "text": "7.1 Abstract"
   },
   {
     "objectID": "references.html",
