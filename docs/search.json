@@ -303,28 +303,28 @@
   {
     "objectID": "wk8_SAR_data.html#abstract",
     "href": "wk8_SAR_data.html#abstract",
-    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "title": "8  Week8 - Synthetic Aperture Radar (SAR) data",
     "section": "8.1 Abstract",
     "text": "8.1 Abstract\nThis class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given."
   },
   {
     "objectID": "wk8_SAR_data.html#difference-of-other-sar",
     "href": "wk8_SAR_data.html#difference-of-other-sar",
-    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "title": "8  Week8 - Synthetic Aperture Radar (SAR) data",
     "section": "8.2 Difference of other SAR",
     "text": "8.2 Difference of other SAR\n\n\n\n\n\n\n\n\n\nSAR\nInSAR\nDInSAR\nPSInSAR\n\n\n\n\nSynthetic Aperture Radar\nInterferometric Synthetic Aperture Radar\nDifferential Interferometric Synthetic Aperture Radar\nPersistent Scatterer Interferometric SAR\n\n\n\nA radar system capable of producing high-resolution images.\nUses a “virtual” antenna length to combine echo signals received from different positions, resulting in higher-resolution radar imaging.\nUsed for surface observations such as land use, topography, and forest cover.\n\n\nAnalyzes surface deformation by exploiting the phase difference between two remote sensing images.\nCalculates the deformation at each pixel on the ground surface between two observations.\nReveals elevation and deformation information.\n\n\nBuilds upon InSAR by using phase differences from multiple remote sensing images to improve deformation measurement accuracy.\nSensitive to deformation, suitable for monitoring ground surface changes due to earthquakes, mining, landslides, etc.\nUtilizes two SAR images and external topographic data to measure subtle surface deformations.\n\n\nModels and analyzes time series data from multiple SAR images to enhance deformation inversion accuracy.\nReveals spatial distribution of surface deformations, widely used for monitoring urban subsidence and infrastructure changes."
   },
   {
     "objectID": "wk8_SAR_data.html#section",
     "href": "wk8_SAR_data.html#section",
-    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "title": "8  Week8 - Synthetic Aperture Radar (SAR) data",
     "section": "8.3 ",
     "text": "8.3"
   },
   {
     "objectID": "wk8_SAR_data.html#sar-data-application",
     "href": "wk8_SAR_data.html#sar-data-application",
-    "title": "8  Week9 - Synthetic Aperture Radar (SAR) data",
+    "title": "8  Week8 - Synthetic Aperture Radar (SAR) data",
     "section": "8.4 SAR data application",
     "text": "8.4 SAR data application\nAnalyze the change between two images (e.g. ratio or logarithmic ratio)\nOpen Access Damage Detection Using Sentinel-1 Imagery\nBlast Damage Assessment\nSee the difference over time in the following ways:\nPixel-Wise T-Test"
   },
