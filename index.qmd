@@ -5,6 +5,6 @@ format:
 
 # About me {.unnumbered}
 
-Tell you later :)
+Hello, my name is Xiaoyi Chen. I developed a keen interest in remote sensing during my undergraduate studies due to my involvement in a graduation project focused on remote sensing image processing. This experience sparked my curiosity and enthusiasm for exploring the intricacies of this field further.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Additionally, I have a passion for photography and enjoy capturing moments through my lens. Below are some of my photographic records.
