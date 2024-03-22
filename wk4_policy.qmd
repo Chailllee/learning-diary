@@ -3,3 +3,37 @@ title: "Week4 - Policy Applications"
 ---
 
 ## Abstract
+
+## **1. Problem: Context & Background**
+
+-   Beijing witnessed its heaviest rainfall in 140 years between 29 July and 1 August 2023.
+
+-   Factors contributing to floods include climate conditions, landform, and urbanization.
+
+-   Urbanization exacerbates flooding due to increased impervious surfaces and altered drainage systems.
+
+## **2. Policy & Case study**
+
+### **2.1 UN Sustainable Development Goals**
+
+-   Prioritize wastewater treatment and sustainable urbanization.
+
+-   Develop climate disaster resilience strategies.
+
+-   Follow the Sendai Framework for Disaster Risk Reduction.
+
+### **2.2 Beijing Urban Resilience Strategy**
+
+-   Upgrade emergency disaster prevention technology.
+
+-   Improve emergency rescue capability.
+
+-   Foster cross-sectoral coordination and collaboration.
+
+## Reference
+
+Beijing Municipal Emergency Committee.(2022).Notice of the Beijing Municipal Emergency Committee on Printing and Distributing the Beijing Flood Control Emergency Plan (Revised in 2022).https://www.beijing.gov.cn/zhengce/zhengcefagui/202308/t20230807_3216832.html
+
+Ding, X., Liao, W., Lei, X., Wang, H., Yang, J., & Wang, H. (2022). Assessment of the impact of climate change on urban flooding: A case study of Beijing, China. Journal of Water and Climate Change, 13(10), 2692–3715. https://doi.org/10.2166/wcc.2022.224
+
+Proposals for China's Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024).

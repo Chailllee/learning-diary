@@ -22,14 +22,16 @@ This class introduces the basic principle of synthetic aperture radar (SAR), two
 |                                                                                                                                              |                                                                                                        |                                                                                                                                   |                                                                                                                                   |
 +----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
-## SAR数据的应用
+## 
 
-分析两个图像之间的变化（例如比率或对数比率）
+## SAR data application
+
+Analyze the change between two images (e.g. ratio or logarithmic ratio)
 
 [**Open Access Damage Detection Using Sentinel-1 Imagery**](https://oballinger.github.io/PWTT/)
 
 [**Blast Damage Assessment**](https://bellingcat.github.io/RS4OSINT/C3_Blast.html)
 
-通过以下方式查看随时间变化的差异：
+See the difference over time in the following ways:
 
 [Pixel-Wise T-Test](https://oballinger.github.io/PWTT/paper.html)
