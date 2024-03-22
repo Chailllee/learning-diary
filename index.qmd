@@ -8,3 +8,5 @@ format:
 Hello, my name is Xiaoyi Chen. I developed a keen interest in remote sensing during my undergraduate studies due to my involvement in a graduation project focused on remote sensing image processing. This experience sparked my curiosity and enthusiasm for exploring the intricacies of this field further.
 
 Additionally, I have a passion for photography and enjoy capturing moments through my lens. Below are some of my photographic records.
+
+![![](images/IMG_5518.JPG)![](images/DSC00332.JPG)![](images/DSCF4884.JPG)![](images/DSC09808.JPG)](images/DSCF4736.JPG)
