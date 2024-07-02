@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -228,11 +209,23 @@ div.csl-indent {
 </section>
 <section id="summary-of-this-class" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="summary-of-this-class"><span class="header-section-number">1.2</span> Summary of this class</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Summary</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><p><strong>Tele-sensing Cities and Environments:</strong> This is a course that introduces the basic principles and applications of tele-sensing, with a focus on urban and environmental issues.</p></li>
 <li><p><strong>Types and principles of remote sensing:</strong> Remote sensing is divided into active and passive, depending on whether it has its own energy transmitter. Remote sensing data is affected by the interaction of electromagnetic waves with the atmosphere and the surface, and needs to be corrected and processed.</p></li>
 <li><p><strong>Format and resolution of remote sensing data:</strong> Remote sensing data is usually raster data and has different storage formats and ways of organizing. The quality and application of remote sensing data are constrained by spatial, spectral, temporal and radiative resolution.</p></li>
 </ul>
+</div>
+</div>
 </section>
 <section id="basic-concepts-and-principles-of-remote-sensing" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="basic-concepts-and-principles-of-remote-sensing"><span class="header-section-number">1.3</span> Basic concepts and principles of remote sensing</h2>
@@ -249,11 +242,11 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">For the untrained eye, it’s just a bunch of black and white pixels. But the reality is that there’s more than meets the eye. For example, the 3 main types of backscatter are: Specular reflection Double-bounce Diffuse scattering</td>
-<td style="text-align: center;">Passive remote sensing can be very similar to how our eyes interpret the world. But the power of passive remote sensing is to see light in the whole <a href="https://gisgeography.com/multispectral-vs-hyperspectral-imagery-explained/" style="blue">electromagnetic spectrum</a>. For example, this multispectral image can have different band combinations like color infrared.</td>
+<td style="text-align: center;">Passive remote sensing can be very similar to how our eyes interpret the world. But the power of passive remote sensing is to see light in the whole <a href="https://gisgeography.com/multispectral-vs-hyperspectral-imagery-explained/" style="blue">electromagnetic spectrum</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. For example, this multispectral image can have different band combinations like color infrared.</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">An example of an active sensor is <a href="https://gisgeography.com/synthetic-aperture-radar-examples/" style="blue">synthetic Aperture radar (SAR)</a>, which can “see through the clouds” and has polarization characteristics that can reflect different electromagnetic waves based on surface roughness, shape, orientation, humidity, salinity, density, etc.</td>
-<td style="text-align: center;"><p>In terms of passive remote sensing, the&nbsp;<a href="http://landsat.gsfc.nasa.gov/">Landsat mission</a>&nbsp;is the longest-running earth observation program. On board Landsat-8, <a href="https://gisgeography.com/landsat-8-bands-combinations/" class="illustration" style="blue">OLI</a> generates 9 spectral bands (Band 1 to 9).</p>
+<td style="text-align: center;">An example of an active sensor is <a href="https://gisgeography.com/synthetic-aperture-radar-examples/" style="blue">synthetic Aperture radar (SAR)</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, which can “see through the clouds” and has polarization characteristics that can reflect different electromagnetic waves based on surface roughness, shape, orientation, humidity, salinity, density, etc.</td>
+<td style="text-align: center;"><p>In terms of passive remote sensing, the&nbsp;<a href="http://landsat.gsfc.nasa.gov/">Landsat mission</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> is the longest-running earth observation program. On board Landsat-8, <a href="https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/" class="illustration" style="blue">OLI</a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> generates 9 spectral bands (Band 1 to 9).</p>
 <p><img src="images/clipboard-2255416882.png" class="img-fluid"></p></td>
 </tr>
 <tr class="odd">
@@ -275,7 +268,12 @@ div.csl-indent {
 <figcaption class="figure-caption">Multispectral common channels</figcaption>
 </figure>
 </div>
-<p>[Comparison of spectral bands between Sentinel-2 and Landsat-8][^intro-1]<a href="https://www.mdpi.com/remotesensing/remotesensing-13-00992/article_deploy/html/images/remotesensing-13-00992-g003.png" class="illustration" style="gray" data-fig-align="center"><span class="citation" data-cites="lópez-puigdollers2021">López-Puigdollers, Mateo-García, and Gómez-Chova (<span>2021</span>)</span></a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/remotesensing-13-00992-g003.webp" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Comparison of spectral bands between Sentinel-2 and Landsat-8<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</figcaption>
+</figure>
+</div>
 <p>In general, the relationship between electromagnetic wave and multi-spectrum is that multi-spectral remote sensing uses different bands of electromagnetic wave, and more information of ground targets can be obtained by analyzing the information of these bands.</p>
 </section>
 </section>
@@ -287,11 +285,16 @@ div.csl-indent {
 <p>Through the basic knowledge of this class, I inadvertently deepened my understanding of Landsat series satellites from the concepts of electromagnetic wave, multispectral image and hyperspectral image. Landsat provides the longest continuous space record of Earth’s land mass. Its data is essential for us to make informed decisions about the Earth’s resources and environment. It Landsat is more than just a camera circling the globe with an excellent zoom lens. It measures how much light the Earth reflects from the sun. With Landsat, we have access to a variety of useful images that reveal more about the Earth and help us better understand and manage our planet. For example, these images can be used to monitor the effects of natural and human factors such as land cover, climate change, urbanization, drought, fires, changes in biomass, etc. Therefore, the public use of Landsat data makes a lot of sense, and experts, scholars, and enterprise engineers can implement projects according to their needs.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-lópez-puigdollers2021" class="csl-entry" role="listitem">
-López-Puigdollers, Dan, Gonzalo Mateo-García, and Luis Gómez-Chova. 2021. <span>“Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images.”</span> <em>Remote Sensing</em> 13 (5): 992. <a href="https://doi.org/10.3390/rs13050992">https://doi.org/10.3390/rs13050992</a>.
-</div>
-</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>GISGeography (2024) <em>Multispectral vs Hyperspectral Imagery Explained</em>. Available at: <a href="https://gisgeography.com/multispectral-vs-hyperspectral-imagery-explained/" class="uri">https://gisgeography.com/multispectral-vs-hyperspectral-imagery-explained/</a>(Accessed: 2 July 2024)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>GISGeography (2024) <em>Learn Synthetic Aperture Radar (SAR) by Example</em>. Available at: <a href="https://gisgeography.com/synthetic-aperture-radar-examples/" class="uri">https://gisgeography.com/synthetic-aperture-radar-examples/</a>(Accessed: 2 July 2024)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>National Aeronautics and Space Administration (2024) <em>Landsat Science</em>. Available at: <a href="http://landsat.gsfc.nasa.gov/" class="uri">http://landsat.gsfc.nasa.gov/</a>(Accessed: 2 July 2024)<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>National Aeronautics and Space Administration (2024) <em>Operational Land Imager</em>. Available at: <a href="https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/" class="uri">https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/</a>(Accessed: 2 July 2024)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>López-Puigdollers D, Mateo-García G, Gómez-Chova L. Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images.&nbsp;<em>Remote Sensing</em>. 2021; 13(5):992. <a href="https://doi.org/10.3390/rs13050992" class="uri">https://doi.org/10.3390/rs13050992</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
