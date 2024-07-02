@@ -66,7 +66,7 @@ In general, the relationship between electromagnetic wave and multi-spectrum is 
 
 ## Application
 
-### Remote Sensing Bands and Environmental Applications 
+### Remote Sensing Bands and Environmental Applications
 
 This section explores how different spectral bands used in remote sensing contribute to monitoring and managing environmental phenomena such as forest vegetation, water bodies, and soil classification. Each application highlights specific bands that enhance detection accuracy and provide critical insights for environmental studies and management.
 
