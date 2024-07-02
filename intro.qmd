@@ -62,6 +62,8 @@ Multispectral remote sensing refers to the remote sensing observation and resear
 
 In general, the relationship between electromagnetic wave and multi-spectrum is that multi-spectral remote sensing uses different bands of electromagnetic wave, and more information of ground targets can be obtained by analyzing the information of these bands.
 
+## Application
+
 ## Reflection
 
 Through the basic knowledge of this class, I inadvertently deepened my understanding of Landsat series satellites from the concepts of electromagnetic wave, multispectral image and hyperspectral image. Landsat provides the longest continuous space record of Earth's land mass. Its data is essential for us to make informed decisions about the Earth's resources and environment. It Landsat is more than just a camera circling the globe with an excellent zoom lens. It measures how much light the Earth reflects from the sun. With Landsat, we have access to a variety of useful images that reveal more about the Earth and help us better understand and manage our planet. For example, these images can be used to monitor the effects of natural and human factors such as land cover, climate change, urbanization, drought, fires, changes in biomass, etc. Therefore, the public use of Landsat data makes a lot of sense, and experts, scholars, and enterprise engineers can implement projects according to their needs.
