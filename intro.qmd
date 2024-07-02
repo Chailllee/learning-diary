@@ -54,14 +54,14 @@ Multispectral remote sensing refers to the remote sensing observation and resear
 
 ![Multispectral common channels](images/clipboard-1755175584.png)
 
-![Comparison of spectral bands between Sentinel-2 and Landsat-8[^intro-1][@lópez-puigdollers2021]](https://www.mdpi.com/remotesensing/remotesensing-13-00992/article_deploy/html/images/remotesensing-13-00992-g003.png){.illustration style="gray" fig-align="center"}
+![Comparison of spectral bands between Sentinel-2 and Landsat-8][^intro-1][@lópez-puigdollers2021](https://www.mdpi.com/remotesensing/remotesensing-13-00992/article_deploy/html/images/remotesensing-13-00992-g003.png){.illustration style="gray" fig-align="center"}
 
-[^intro-1]: López-Puigdollers D, Mateo-García G, Gómez-Chova L. Benchmarking Deep Learning Models for Cloud Detection in Landsat-8 and Sentinel-2 Images. *Remote Sensing*. 2021; 13(5):992. <https://doi.org/10.3390/rs13050992>
 
 
 In general, the relationship between electromagnetic wave and multi-spectrum is that multi-spectral remote sensing uses different bands of electromagnetic wave, and more information of ground targets can be obtained by analyzing the information of these bands.
 
 ## Application
+
 
 ## Reflection
 
