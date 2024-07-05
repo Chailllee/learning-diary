@@ -6,21 +6,88 @@ institute: "CASA, UCL"
 date: "2024/3/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
+    css: [xaringan-themer.css, custom.css]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+    seal: false
       
 ---
-class: center, title-slide, bottom
+
+```{r setup, include=FALSE,echo=FALSE}
+options(htmltools.dir.version = FALSE)
+library(dplyr)
+library(readr)
+library(readxl)
+library(knitr)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(primary_color = "#0D5E74", 
+                 # secondary_color = "#2881C6",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"),
+)
+```
+
+```{r xaringan-all, echo=FALSE, warning=FALSE}
+library(countdown)
+library(xaringan)
+library(xaringanExtra)
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+xaringanExtra::use_broadcast()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_scribble()
+#xaringanExtra::use_slide_tone()
+xaringanExtra::use_search(show_icon = TRUE, auto_search	=FALSE)
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_clipboard()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         
+  mute_unhighlighted_code = TRUE  
+)
+```
+
+```{r setupbibliography, include=FALSE}
+# Code supplied by Andy (see wk2 slides 25-28)
+library(RefManageR)
+library(knitcitations)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("references.bib",
+                 # "./Bib.bib", 
+                 check = FALSE)
+```
+
+class: center, title-slide, middle
 
 background-image: url("https://th.bing.com/th/id/OIP.bymqEIDKbTreoK_4_0JyzgHaEK?rs=1&pid=ImgDetMain")
 background-size: cover
 background-position: center
 
+</br>
 # Landsat 9
+</br></br></br>
 ## A new milestone for Earth observation
+</br> </br>
+### Xiaoyi Chen, CASA, UCL
 ### `r format(Sys.time(), "%d/%m/%Y")`
 
 ---
@@ -39,20 +106,60 @@ img {
 ## 1 Introduction to Landsat 9
 ### 1.1 Landsat9 Overview
 
-```{r echo=FALSE, out.height='200%', fig.align='center'}
+```{r eval=FALSE, fig.align='center', include=FALSE, out.height='200%'}
 l9_path="https://landsat.gsfc.nasa.gov/wp-content/uploads/2020-07/Landsat_timeline_20200318_title.gif"
 knitr::include_graphics(l9_path)
 ```
 
-<br/>
+```{r echo=FALSE, out.height='200%', fig.align='center', fig.cap='Timeline of the Landsat program'}
+l9_path="https://landsat.gsfc.nasa.gov/wp-content/uploads/2020-07/Landsat_timeline_20200318_title.gif"
+knitr::include_graphics(l9_path)
+```
+
+<div class="justify-text">
 Landsat 9, launched in September 27, 2021, is a collaborative satellite mission between NASA and the U.S. Geological Survey (USGS). It serves as a continuation of the Landsat program's legacy in Earth observation.
+</div>
+</br>
+source:[NASA](https://landsat.gsfc.nasa.gov/satellites/timeline/)
 
 ---
 ## 1 Introduction to Landsat 9
+
+### 1.2 Mission Objectives
+<div style="display: flex; justify-content: space-around; align-items: flex-start; text-align: right;">
+  <figure style="margin: 0 5px; flex-basis: calc(50% - 10px);">
+    <figcaption style="font-size: 18px; text-align: middle;">
+      <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
+        <li style="font-size: 18px;">The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.</li>
+      </ul>
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0 5px; flex-basis: calc(65% - 2px);">
+    <img src="./images/Landsat9factsheet.png" style="width: 250%; max-height: 700px;" alt="Landsat 9 Mission Logo"/>
+  </figure>
+</div>
+
+Landsat 9 Mission Logo: [View Media Details](https://www.usgs.gov/landsat-missions/landsat-9#:~:text=Landsat%209%20is%20a%20partnership%20between%20the%20U.S.,for%20monitoring%2C%20understanding%2C%20and%20manag%C2%ADing%20Earth%E2%80%99s%20natural%20resources.)
+
+---
 ### 1.2 Mission Objectives:
 
-<br/>
+<div class="custom-page">
+.pull-left[
+    
 The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.
+
+]
+
+.pull-right[
+```{r echo=FALSE, out.width='300%', fig.align='right'}
+knitr::include_graphics("images/Landsat9factsheet.png")
+```
+]
+
+</div>
+Landsat 9 Mission Logo: [View Media Details](https://www.usgs.gov/landsat-missions/landsat-9#:~:text=Landsat%209%20is%20a%20partnership%20between%20the%20U.S.,for%20monitoring%2C%20understanding%2C%20and%20manag%C2%ADing%20Earth%E2%80%99s%20natural%20resources.)
 
 
 ---
@@ -90,39 +197,58 @@ The Landsat 9 mission is significant in continuously monitoring changes on Earth
 Role of Data in Scientific Research and Applications:
 Data from Landsat 9 plays a crucial role in various scientific research and applications, supporting activities such as land use monitoring, agricultural production optimization, urban planning, and environmental protection.
 
-
 ---
 ## 4 Scientific Applications of Landsat 9
 
-Land Use Monitoring:
+```{r xaringan-panelset-1, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+.panelset[
+
+.panel[.panel-name[Land Use Monitoring]
+
 Landsat 9 data can be utilized for monitoring land use and cover changes, including agricultural expansion, urbanization, forest changes, etc., providing essential insights for land resource management and planning.
 
+- **1.29 million** people were affected, with **33 dead and 18 missing**
+
+- **59,000** houses collapse and **147,000 houses** seriously damaged
+
+- Crops affected about **225,000 acres**
 
 
 
----
-## 4 Scientific Applications of Landsat 9
+source: [Voanews](https://www.voanews.com/a/floods-strike-blow-to-china-s-faltering-economy-/7221953.html), [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)
+]
 
 
+.panel[.panel-name[Agriculture and Forestry]
 
-Agriculture and Forestry:
 Agricultural and forestry managers can leverage Landsat 9 data to monitor crop growth conditions, forest cover changes, etc., optimizing agricultural production and forest resource management.
 
 
+source: [Scmp](https://www.scmp.com/economy/china-economy/article/3143212/china-floods-economic-damage-livestock-industry-tops-us348), [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)
+]
 
----
-## 4 Scientific Applications of Landsat 9
 
-Urban Planning and Development:
+.panel[.panel-name[Urban Planning]
+
 Landsat 9 data supports urban planning and development monitoring, including urban expansion, land use structure changes, etc., providing valuable information for urban planners and policymakers.
 
 
+source: [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)]
 
----
-## 4 Scientific Applications of Landsat 9
 
-Environmental Management and Natural Resource Conservation:
+
+.panel[.panel-name[Environmental Management]
+
 Landsat 9 data is crucial for environmental monitoring, natural resource conservation, and ecosystem management, facilitating the identification of ecologically sensitive areas, pollution monitoring, etc.
+
+source: [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)]
+
+]
+
+
 
 
 
@@ -155,10 +281,11 @@ With continuous technological advancements, Earth observation technology is expe
 
 
 
+---
+## Reference
+<small>
 
-
-
-
+- NASA (2024) _Landsat Program: 50 Years of Earth Observations_. Available at: https://landsat.gsfc.nasa.gov/satellites/timeline/ (Accessed: 5 July 2024).
 
 
 

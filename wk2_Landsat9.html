@@ -4,40 +4,64 @@
     <title>Week2 - Xaraingen</title>
     <meta charset="utf-8" />
     <meta name="author" content="Xiaoyi Chen" />
-    <script src="libs/header-attrs-2.27/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":false}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"bf04be39da4f4629aa0cafc1dbe42ff3","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
 
-.title[
-# Week2 - Xaraingen
-]
-.subtitle[
-## About Landsat9
-]
-.author[
-### Xiaoyi Chen
-]
-.institute[
-### CASA, UCL
-]
-.date[
-### 2024/3/12 (updated: 2024-07-05)
-]
 
----
 
-class: center, title-slide, bottom
+
+
+
+
+
+
+
+class: center, title-slide, middle
 
 background-image: url("https://th.bing.com/th/id/OIP.bymqEIDKbTreoK_4_0JyzgHaEK?rs=1&amp;pid=ImgDetMain")
 background-size: cover
 background-position: center
 
+&lt;/br&gt;
 # Landsat 9
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
 ## A new milestone for Earth observation
+&lt;/br&gt; &lt;/br&gt;
+### Xiaoyi Chen, CASA, UCL
 ### 05/07/2024
 
 ---
@@ -56,17 +80,55 @@ img {
 ## 1 Introduction to Landsat 9
 ### 1.1 Landsat9 Overview
 
-&lt;img src="https://landsat.gsfc.nasa.gov/wp-content/uploads/2020-07/Landsat_timeline_20200318_title.gif" height="200%" style="display: block; margin: auto;" /&gt;
 
-&lt;br/&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="https://landsat.gsfc.nasa.gov/wp-content/uploads/2020-07/Landsat_timeline_20200318_title.gif" alt="Timeline of the Landsat program" height="200%" /&gt;
+&lt;p class="caption"&gt;Timeline of the Landsat program&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="justify-text"&gt;
 Landsat 9, launched in September 27, 2021, is a collaborative satellite mission between NASA and the U.S. Geological Survey (USGS). It serves as a continuation of the Landsat program's legacy in Earth observation.
+&lt;/div&gt;
+&lt;/br&gt;
+source:[NASA](https://landsat.gsfc.nasa.gov/satellites/timeline/)
 
 ---
 ## 1 Introduction to Landsat 9
+
+### 1.2 Mission Objectives
+&lt;div style="display: flex; justify-content: space-around; align-items: flex-start; text-align: right;"&gt;
+  &lt;figure style="margin: 0 5px; flex-basis: calc(50% - 10px);"&gt;
+    &lt;figcaption style="font-size: 18px; text-align: middle;"&gt;
+      &lt;ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;"&gt;
+        &lt;li style="font-size: 18px;"&gt;The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;figure style="margin: 0 5px; flex-basis: calc(65% - 2px);"&gt;
+    &lt;img src="./images/Landsat9factsheet.png" style="width: 250%; max-height: 700px;" alt="Landsat 9 Mission Logo"/&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+Landsat 9 Mission Logo: [View Media Details](https://www.usgs.gov/landsat-missions/landsat-9#:~:text=Landsat%209%20is%20a%20partnership%20between%20the%20U.S.,for%20monitoring%2C%20understanding%2C%20and%20manag%C2%ADing%20Earth%E2%80%99s%20natural%20resources.)
+
+---
 ### 1.2 Mission Objectives:
 
-&lt;br/&gt;
+&lt;div class="custom-page"&gt;
+.pull-left[
+    
 The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.
+
+]
+
+.pull-right[
+&lt;img src="images/Landsat9factsheet.png" width="300%" style="display: block; margin: auto 0 auto auto;" /&gt;
+]
+
+&lt;/div&gt;
+Landsat 9 Mission Logo: [View Media Details](https://www.usgs.gov/landsat-missions/landsat-9#:~:text=Landsat%209%20is%20a%20partnership%20between%20the%20U.S.,for%20monitoring%2C%20understanding%2C%20and%20manag%C2%ADing%20Earth%E2%80%99s%20natural%20resources.)
 
 
 ---
@@ -101,39 +163,56 @@ The Landsat 9 mission is significant in continuously monitoring changes on Earth
 Role of Data in Scientific Research and Applications:
 Data from Landsat 9 plays a crucial role in various scientific research and applications, supporting activities such as land use monitoring, agricultural production optimization, urban planning, and environmental protection.
 
-
 ---
 ## 4 Scientific Applications of Landsat 9
 
-Land Use Monitoring:
+
+
+.panelset[
+
+.panel[.panel-name[Land Use Monitoring]
+
 Landsat 9 data can be utilized for monitoring land use and cover changes, including agricultural expansion, urbanization, forest changes, etc., providing essential insights for land resource management and planning.
 
+- **1.29 million** people were affected, with **33 dead and 18 missing**
+
+- **59,000** houses collapse and **147,000 houses** seriously damaged
+
+- Crops affected about **225,000 acres**
 
 
 
----
-## 4 Scientific Applications of Landsat 9
+source: [Voanews](https://www.voanews.com/a/floods-strike-blow-to-china-s-faltering-economy-/7221953.html), [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)
+]
 
 
+.panel[.panel-name[Agriculture and Forestry]
 
-Agriculture and Forestry:
 Agricultural and forestry managers can leverage Landsat 9 data to monitor crop growth conditions, forest cover changes, etc., optimizing agricultural production and forest resource management.
 
 
+source: [Scmp](https://www.scmp.com/economy/china-economy/article/3143212/china-floods-economic-damage-livestock-industry-tops-us348), [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)
+]
 
----
-## 4 Scientific Applications of Landsat 9
 
-Urban Planning and Development:
+.panel[.panel-name[Urban Planning]
+
 Landsat 9 data supports urban planning and development monitoring, including urban expansion, land use structure changes, etc., providing valuable information for urban planners and policymakers.
 
 
+source: [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)]
 
----
-## 4 Scientific Applications of Landsat 9
 
-Environmental Management and Natural Resource Conservation:
+
+.panel[.panel-name[Environmental Management]
+
 Landsat 9 data is crucial for environmental monitoring, natural resource conservation, and ecosystem management, facilitating the identification of ecologically sensitive areas, pollution monitoring, etc.
+
+source: [Reuters](https://www.reuters.com/world/china/china-floods-hit-rice-corn-crops-trigger-food-inflation-worries-2023-08-11/)]
+
+]
+
+
 
 
 
@@ -166,10 +245,11 @@ With continuous technological advancements, Earth observation technology is expe
 
 
 
+---
+## Reference
+&lt;small&gt;
 
-
-
-
+- NASA (2024) _Landsat Program: 50 Years of Earth Observations_. Available at: https://landsat.gsfc.nasa.gov/satellites/timeline/ (Accessed: 5 July 2024).
 
 
 
