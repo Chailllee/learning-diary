@@ -126,19 +126,18 @@ source:[NASA](https://landsat.gsfc.nasa.gov/satellites/timeline/)
 ## 1 Introduction to Landsat 9
 
 ### 1.2 Mission Objectives
-<div style="display: flex; justify-content: space-around; align-items: flex-start; text-align: right;">
-  <figure style="margin: 0 0px; flex-basis: calc(55% - 5px);">
-    <figcaption style="font-size: 24px; text-align: middle;">
-      <ul style="list-style-type: disc; padding-left: 0; margin: 5px 0; text-align: left;">
-        <li style="font-size: 20px;">The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.</li>
-      </ul>
-    </figcaption>
-  </figure>
 
-  <figure style="margin: 0 5px; flex-basis: calc(65% - 2px);">
-    <img src="./images/Landsat9factsheet.png" style="width: 250%; max-height: 700px;" alt="Landsat 9 Mission Logo"/>
-  </figure>
-</div>
+.pull-left[
+The primary objectives of Landsat 9 include continuous monitoring of the Earth's surface, providing high-resolution Earth imaging data, and supporting various scientific research and applications such as land use monitoring, agriculture, forestry, urban planning, and environmental management.
+]
+
+.pull-right[
+
+```{r echo=FALSE, out.width='150%', fig.align='center'}
+knitr::include_graphics("./images/Landsat9factsheet.png")
+```
+]
+
 
 Landsat 9 Mission Logo: [View Media Details](https://www.usgs.gov/landsat-missions/landsat-9#:~:text=Landsat%209%20is%20a%20partnership%20between%20the%20U.S.,for%20monitoring%2C%20understanding%2C%20and%20manag%C2%ADing%20Earth%E2%80%99s%20natural%20resources.)
 
@@ -206,6 +205,47 @@ source:[USGS Technical Announcement (February 2022)](https://www.usgs.gov/landsa
 4. **Global Constellation**: Landsat has become a cornerstone of the global constellation of imagers. Its science quality and careful calibration make it a "gold standard" for harmonizing multiple sources of satellite imagery.
 
 source:[Landsat 9 Mission Details](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-mission-details/)
+
+
+---
+## 2.1 UN Sustainable Development Goals
+
+<div style="display: flex; justify-content: space-around; align-items: flex-start; text-align: left;">
+  <figure style="margin: 0 5px; flex-basis: calc(33.3% - 10px);">
+    <img src="./images/cropland.png" style="width: 100%; max-height: 200px;" alt=" "/>
+    <figcaption style="font-size: 18px; text-align: left;">
+      <strong>Wastewater treatment to improve utilization and ensure freshwater supply</strong>
+      <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
+        <li style="font-size: 18px;">Domestic and industrial wastewater flows safely treated</li>
+        <li style="font-size: 18px;">Water bodies with good environmental quality</li>
+        <li style="font-size: 18px;">Freshwater withdrawals to available freshwater resources</li>
+      </ul>
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0 5px; flex-basis: calc(33.3% - 10px);">
+    <img src="https://images.theconversation.com/files/508818/original/file-20230208-15-lbcw9x.gif?ixlib=rb-4.1.0&q=30&auto=format&w=600&h=349&fit=crop&dpr=2" style="width: 100%; max-height: 200px;" alt=" "/>
+    <figcaption style="font-size: 18px; text-align: left;">
+      <strong>Sustainable urbanization, disaster reduction</strong>
+      <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
+        <li style="font-size: 18px;">Civil society participation in urban planning and management</li>
+        <li style="font-size: 18px;">Population, economic and infrastructure losses associated with disasters</li>
+      </ul>
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0 5px; flex-basis: calc(33.3% - 10px);">
+    <img src="https://landsat.gsfc.nasa.gov/wp-content/uploads/2022/03/LandsatFactsheet_urban_front.png" style="width: 100%; max-height: 200px;" alt=" "/>
+    <figcaption style="font-size: 18px; text-align: left;">
+      <strong>Climate disaster resilience and planning</strong>
+      <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
+        <li style="font-size: 18px;">Sendai Framework for Disaster Risk Reduction</li>
+        <li style="font-size: 18px;">Development of local strategies based on national strategies</li>
+        <li style="font-size: 18px;">Reporting to the United Nations Framework Convention on Climate Change on information, plans and contributions</li>
+      </ul>
+    </figcaption>
+  </figure>
+</div>
 
 ---
 ## 4 Scientific Applications of Landsat 9
