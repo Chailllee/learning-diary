@@ -208,17 +208,15 @@ source:[Landsat 9 Mission Details](https://landsat.gsfc.nasa.gov/satellites/land
 
 
 ---
-## 2.1 UN Sustainable Development Goals
+## 4 Scientific Applications of Landsat 9
 
 <div style="display: flex; justify-content: space-around; align-items: flex-start; text-align: left;">
   <figure style="margin: 0 5px; flex-basis: calc(33.3% - 10px);">
-    <img src="./images/cropland.png" style="width: 100%; max-height: 200px;" alt=" "/>
+    <img src="./images/cropland.png" style="width: 200%; max-height: 400px;" alt=" "/>
     <figcaption style="font-size: 18px; text-align: left;">
-      <strong>Wastewater treatment to improve utilization and ensure freshwater supply</strong>
+      <strong>Agriculture and Forestry</strong>
       <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
-        <li style="font-size: 18px;">Domestic and industrial wastewater flows safely treated</li>
-        <li style="font-size: 18px;">Water bodies with good environmental quality</li>
-        <li style="font-size: 18px;">Freshwater withdrawals to available freshwater resources</li>
+        <li style="font-size: 18px;">Agricultural and forestry managers can leverage Landsat 9 data to monitor crop growth conditions, forest cover changes, etc., optimizing agricultural production and forest resource management.(Leslie et al., 2017)</li>
       </ul>
     </figcaption>
   </figure>
@@ -226,10 +224,9 @@ source:[Landsat 9 Mission Details](https://landsat.gsfc.nasa.gov/satellites/land
   <figure style="margin: 0 5px; flex-basis: calc(33.3% - 10px);">
     <img src="https://images.theconversation.com/files/508818/original/file-20230208-15-lbcw9x.gif?ixlib=rb-4.1.0&q=30&auto=format&w=600&h=349&fit=crop&dpr=2" style="width: 100%; max-height: 200px;" alt=" "/>
     <figcaption style="font-size: 18px; text-align: left;">
-      <strong>Sustainable urbanization, disaster reduction</strong>
+      <strong>Environmental Management</strong>
       <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
-        <li style="font-size: 18px;">Civil society participation in urban planning and management</li>
-        <li style="font-size: 18px;">Population, economic and infrastructure losses associated with disasters</li>
+        <li style="font-size: 18px;">Landsat 9 data is crucial for environmental monitoring, natural resource conservation, and ecosystem management, facilitating the identification of ecologically sensitive areas, pollution monitoring, etc. Above images individually shows the shoreline retreat in the Parc Natural del Delta, Spai, and nriver dynamics in Pucallpa, Peru</li>
       </ul>
     </figcaption>
   </figure>
@@ -237,16 +234,19 @@ source:[Landsat 9 Mission Details](https://landsat.gsfc.nasa.gov/satellites/land
   <figure style="margin: 0 5px; flex-basis: calc(33.3% - 10px);">
     <img src="https://landsat.gsfc.nasa.gov/wp-content/uploads/2022/03/LandsatFactsheet_urban_front.png" style="width: 100%; max-height: 200px;" alt=" "/>
     <figcaption style="font-size: 18px; text-align: left;">
-      <strong>Climate disaster resilience and planning</strong>
+      <strong>Land Use Monitoring</strong>
       <ul style="list-style-type: disc; padding-left: 0; margin: 10px 0; text-align: left;">
-        <li style="font-size: 18px;">Sendai Framework for Disaster Risk Reduction</li>
-        <li style="font-size: 18px;">Development of local strategies based on national strategies</li>
-        <li style="font-size: 18px;">Reporting to the United Nations Framework Convention on Climate Change on information, plans and contributions</li>
+        <li style="font-size: 18px;">Landsat 9 data can be utilized for monitoring land use and cover changes, including agricultural expansion, urbanization, forest changes, etc., providing essential insights for land resource management and planning.
+        <li style="font-size: 18px;">**1.29 million** people were affected, with **33 dead and 18 missing**</li>
+        <li style="font-size: 18px;">**59,000** houses collapse and **147,000 houses** seriously damaged</li>
+        <li style="font-size: 18px;">Crops affected about **225,000 acres**</li>
       </ul>
     </figcaption>
   </figure>
 </div>
 
+<li style="font-size: 18px;">source: [USDA/FAS and NASA/GSFC/GIMMS Global Agriculture Monitoring (GLAM) Project]( http://glam1.gsfc.nasa.gov/), [Wu, Q. (2024)](https://theconversation.com/how-to-use-free-satellite-data-to-monitor-natural-disasters-and-environmental-changes-198140)], [Hansen et al., 2021](https://www.sciencedirect.com/science/article/abs/pii/S0034425712000314)
+]</li>
 ---
 ## 4 Scientific Applications of Landsat 9
 
