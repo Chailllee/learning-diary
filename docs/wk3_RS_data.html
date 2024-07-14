@@ -167,7 +167,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">3.1</span> Abstract</a></li>
   <li><a href="#summary-of-common-remote-sensing-indices" id="toc-summary-of-common-remote-sensing-indices" class="nav-link" data-scroll-target="#summary-of-common-remote-sensing-indices"><span class="header-section-number">3.2</span> Summary of Common Remote Sensing Indices</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.3</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.4</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +194,19 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="abstract" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">3.1</span> Abstract</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>This lecture mainly provides detailed information on remote sensing cities and environments, especially on the use and processing of remote sensing data, and introduces the correction methods of remote sensing data, including geometric, atmospheric, orthographic/topographic correction and radiometric correction. Prior to this, data processing is required, including data linking and enhancement such as feathering, image enhancement, and other enhancement techniques. In addition to this, this lesson introduces remote sensing technology, explaining the different types of remote sensing sensors, such as push-sweep and scan sensors, and how they work. Practical Guide: Provides a guide on how to use presentation slides, including the use of search tools and the drawing function on slides.</p>
+</div>
+</div>
 </section>
 <section id="summary-of-common-remote-sensing-indices" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="summary-of-common-remote-sensing-indices"><span class="header-section-number">3.2</span> Summary of Common Remote Sensing Indices</h2>
@@ -229,8 +242,11 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="math display">\[LSTVI = \frac{(Tb - NDVI)}{(Tb + NDVI)} \]</span> where ( Tb ) is the land surface temperature.</p>
 <p>These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.</p>
 </section>
-<section id="reflection" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<section id="application" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="application"><span class="header-section-number">3.3</span> Application</h2>
+</section>
+<section id="reflection" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.4</span> Reflection</h2>
 <p>During my undergraduate dissertation project, I encountered challenges in processing remote sensing data due to significant smoke obscuring vegetation on the land surface. It was my first experience using Python to convert remote sensing images into multidimensional numerical matrices, where each dimension corresponded to different spectral bands of the original remote sensing data. Interestingly, the principle behind performing band calculations in Python was essentially the same as that of commonly used remote sensing index formulas. I realized that applying index calculation formulas in Python involved performing arithmetic operations such as addition, subtraction, multiplication, and division on these multidimensional numerical matrices.</p>
 <p>So this is an example of the band processing I did in my undergraduate program to make the forest fire point more prominent in the image:</p>
 <div class="quarto-figure quarto-figure-center">

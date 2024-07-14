@@ -6,16 +6,6 @@ title: "Week1 - Introduction of RS"
 
 Before starting this course, I need to first understand the purpose of this course, which is to introduce the basic concepts and applications of remote sensing, and through this course of RS, the content we will learn includes:
 
--   Definition, classification and platform of remote perception
-
--   Interaction of electromagnetic waves with the Earth's surface
-
--   Four resolutions for remote sensing data: spatial, spectral, temporal, and radiative
-
--   Format, selection, and limitations of remote sensing data
-
--   Practical cases and analysis methods of remote perception data
-
 ::: callout-tip
 ## **Summary of the first Class**
 
