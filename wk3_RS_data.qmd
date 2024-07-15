@@ -16,7 +16,6 @@ The various techniques, including atmosphereic correction and imagery merging, u
 
 [^wk3_rs_data-1]: Lillesand, T.M. & Kiefer, R.W., 1987. *Remote sensing and image interpretation*. 2nd ed1. New York: Wiley. <https://archive.org/details/remotesensingima00lill/page/1/mode/1up>
 
-
 1.  **Data Transformation**: Most of these techniques involve transforming the raw data to enhance its usability and interpretability. This transformation can be radiometric, spatial, or spectral.
 
 2.  **Enhancement of Information**: These methods aim to enhance the quality of the data to make it more useful for analysis. This could involve reducing noise, highlighting certain features, or combining data from different sources.
@@ -31,14 +30,13 @@ Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapt
 
 [^wk3_rs_data-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
 
-
-In remote sensing analysis, the Normalized Difference Vegetation Index (NDVI) is a widely used index for assessing vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance. 
-$$NDVI= \\frac{NIR-Red}{NIR+Red}$$                                                
+In remote sensing analysis, the Normalized Difference Vegetation Index (NDVI) is a widely used index for assessing vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance. $$NDVI= \frac{NIR-Red}{NIR+Red}$$
 
 Besides NDVI, various other indices are commonly used to extract information about land cover and land use, enhancing the overall information derived from remote sensing data. Here is a summary of some common remote sensing indices.
 
 ```{r, echo=FALSE}
 library(knitr)
+library(kableExtra)
 indices <- data.frame(
   Index = c( 
             "Normalized Difference Water Index (NDWI)", 
@@ -68,13 +66,41 @@ kable(indices, format = "html", escape = FALSE,
       caption = "Summary of Common Remote Sensing Indices")
 ```
 
- These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
+These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
 
 ## Application
 
+In practical applications, these indices are not used in isolation but are often combined to enhance the interpretation and extraction of information from imagery data. Combining multiple indices in remote sensing analysis can provide more comprehensive insights and improve the accuracy of the results.
 
 
 
+Kim, S.W et al.(2021)[^wk3_rs_data-3], discusses various indices used to estimate and analyze urban heat island (UHI) intensity and magnitude. It highlights the use of NDVI for extracting land surface temperature data from satellite images, NDBI for analyzing the built environment, EVI for assessing vegetation coverage, and the Biophysical Composition Index (BCI) for describing urban biophysical characteristics. These indices help researchers to more accurately estimate and analyze UHI intensity and magnitude.
+
+[^wk3_rs_data-3]: Kim, S.W. and Brown, R., 2021. "Urban Heat Island (UHI) intensity and magnitude estimation: A systematic literature review." *Science of The Total Environment*, 779, p.146389. DOI: <10.1016/j.scitotenv.2021.146389>
+
+
+<table>
+<tr>
+<td>
+
+Schultz, M. et al.(2016)[^wk3_rs_data-4] evaluates the performance of eight vegetation indices (VI) from Landsat time series (LTS) for monitoring deforestation across tropical regions. It uses a robust reference database to assess spatial accuracy, sensitivity to observation frequency, and the performance of combined VI. The study mentions the use of the Normalized Difference Fraction Index (NDFI) sensitive to canopy cover, moisture-related VIs (Normalized Difference Moisture Index (NDMI) and Tasseled Cap Wetness (TCw)) that performed spatially better than greenness-related VIs (Normalized Difference Vegetation Index (NDVI) and Tasseled Cap Greenness (TCg)). The spatial accuracy improved, and the overestimation of changes decreased when VIs were fused at the feature level.
+
+[^wk3_rs_data-4]: Schultz, M., Verbesselt, J.G.P.W., Carter, S., Verbesselt, J., Avitabile, V., Quang, H.V., & Herold, M. (2016). ‘Performance of Landsat time series vegetation indices for monitoring deforestation’, _International Journal of Applied Earth Observation and Geoinformation_, vol. 52, pp. 318-327. <doi: 10.1016/j.jag.2016.06.020.>
+
+</td>
+<td>
+
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0303243416301040-gr2_lrg.jpg" alt="UHI Analysis Image" width="300"/>
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+These examples illustrate how combining multiple indices can enhance the analysis and provide more accurate and detailed information for various remote sensing applications.
 
 ## Reflection
 
