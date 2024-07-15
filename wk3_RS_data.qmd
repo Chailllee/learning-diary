@@ -16,9 +16,6 @@ The various techniques, including atmosphereic correction and imagery merging, u
 
 [^wk3_rs_data-1]: Lillesand, T.M. & Kiefer, R.W., 1987. *Remote sensing and image interpretation*. 2nd ed1. New York: Wiley. <https://archive.org/details/remotesensingima00lill/page/1/mode/1up>
 
-    ```{r}
-
-    ```
 
 1.  **Data Transformation**: Most of these techniques involve transforming the raw data to enhance its usability and interpretability. This transformation can be radiometric, spatial, or spectral.
 
@@ -35,6 +32,9 @@ Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapt
 [^wk3_rs_data-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
 
 In remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:
+
+
+
 
 ```{r, echo=FALSE}
 library(knitr)
@@ -56,10 +56,10 @@ indices <- data.frame(
   Formula = c("$$NDVI= \\frac{NIR-Red}{NIR+Red}$$",
               "$$NDWI = \\frac{(Green - NIR)}{(Green + NIR)}$$",
               "$$NDBI = \\frac{(SWIR - NIR)}{(SWIR + NIR)}$$",
-              "$$SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)}$$ where ( L ) is the soil adjustment factor.",
-              "$$EVI = G \\times \\frac{(NIR - Red)}{(NIR + C_1 \\times Red - C_2 \\times Blue + L)}$$ where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment.",
+              "$$SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)}$$",
+              "$$EVI = G \\times \\frac{(NIR - Red)}{(NIR + C_1 \\times Red - C_2 \\times Blue + L)}$$",
               "$$SMI = \\frac{(NIR + SWIR)}{2}$$",
-              "$$LSTVI = \\frac{(Tb - NDVI)}{(Tb + NDVI)}$$ where ( Tb ) is the land surface temperature.")
+              "$$LSTVI = \\frac{(Tb - NDVI)}{(Tb + NDVI)}$$")
 )
 
 kable(indices, format = "html", escape = FALSE, 
@@ -67,7 +67,7 @@ kable(indices, format = "html", escape = FALSE,
       caption = "Summary of Common Remote Sensing Indices")
 ```
 
-These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
+where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment. where ( L ) is the soil adjustment factor. where ( Tb ) is the land surface temperature. These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
 
 ## Application
 
