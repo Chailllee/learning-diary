@@ -253,6 +253,59 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p><span class="math display">\[LSTVI = \frac{(Tb - NDVI)}{(Tb + NDVI)} \]</span> where ( Tb ) is the land surface temperature.</p>
 <p>These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>Summary of Common Remote Sensing Indices</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Index</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Normalized Difference Vegetation Index (NDVI)</td>
+<td style="text-align: left;">Used to assess vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance.</td>
+<td style="text-align: left;">$$NDVI= \frac{NIR-Red}{NIR+Red}$$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Normalized Difference Water Index (NDWI)</td>
+<td style="text-align: left;">Utilized to identify water bodies by comparing the difference between green and near-infrared band reflectance.</td>
+<td style="text-align: left;">$$NDWI = \frac{(Green - NIR)}{(Green + NIR)}$$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Normalized Difference Built-up Index (NDBI)</td>
+<td style="text-align: left;">Employed to detect built-up areas by comparing the difference between near-infrared and shortwave infrared band reflectance.</td>
+<td style="text-align: left;">$$NDBI = \frac{(SWIR - NIR)}{(SWIR + NIR)}$$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Soil Adjusted Vegetation Index (SAVI)</td>
+<td style="text-align: left;">Similar to NDVI but adjusts for soil background effects, particularly in areas with sparse vegetation cover.</td>
+<td style="text-align: left;">$$SAVI = \frac{((NIR - Red) \times (1 + L))}{(NIR + Red + L)}$$ where ( L ) is the soil adjustment factor.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Enhanced Vegetation Index (EVI)</td>
+<td style="text-align: left;">An enhanced version of NDVI that incorporates blue and red-edge bands, providing better sensitivity to high-density vegetation areas.</td>
+<td style="text-align: left;">$$EVI = G \times \frac{(NIR - Red)}{(NIR + C_1 \times Red - C_2 \times Blue + L)}$$ where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Soil Moisture Index (SMI)</td>
+<td style="text-align: left;">Used to estimate soil moisture content and soil wetness conditions in agricultural and hydrological studies.</td>
+<td style="text-align: left;">$$SMI = \frac{(NIR + SWIR)}{2}$$</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Land Surface Temperature and Vegetation Index (LSTVI)</td>
+<td style="text-align: left;">Combines information from land surface temperature (LST) and vegetation indices to analyze urban heat island effects and land use changes.</td>
+<td style="text-align: left;">$$LSTVI = \frac{(Tb - NDVI)}{(Tb + NDVI)}$$ where ( Tb ) is the land surface temperature.</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
 </section>
 <section id="application" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="application"><span class="header-section-number">3.3</span> Application</h2>

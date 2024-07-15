@@ -12,9 +12,13 @@ This lecture mainly provides detailed information on remote sensing cities and e
 
 ## Summary of Common Remote Sensing Indices
 
-The various techniques, including atmosphereic correction and imagery merging, used in remote sensing to enhance and process imagery data share common principles. While they serve different purposes[^intro-1], they share some common principles:
+The various techniques, including atmosphereic correction and imagery merging, used in remote sensing to enhance and process imagery data share common principles. While they serve different purposes[^wk3_rs_data-1], they share some common principles:
 
-[^intro-1]:Lillesand, T.M. & Kiefer, R.W., 1987. *Remote sensing and image interpretation*. 2nd ed1. New York: Wiley. <https://archive.org/details/remotesensingima00lill/page/1/mode/1up>
+[^wk3_rs_data-1]: Lillesand, T.M. & Kiefer, R.W., 1987. *Remote sensing and image interpretation*. 2nd ed1. New York: Wiley. <https://archive.org/details/remotesensingima00lill/page/1/mode/1up>
+
+    ```{r}
+
+    ```
 
 1.  **Data Transformation**: Most of these techniques involve transforming the raw data to enhance its usability and interpretability. This transformation can be radiometric, spatial, or spectral.
 
@@ -26,11 +30,9 @@ The various techniques, including atmosphereic correction and imagery merging, u
 
 ![](images/RS_book.png){fig-align="center"}
 
-Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapters(Klaus Temfli et al., [2009](https://research.utwente.nl/en/publications/principles-of-remote-sensing-an-introductory-textbook-4))[^intro-2]
+Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapters(Klaus Temfli et al., [2009](https://research.utwente.nl/en/publications/principles-of-remote-sensing-an-introductory-textbook-4))[^wk3_rs_data-2]
 
-[^intro-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
-
-
+[^wk3_rs_data-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
 
 In remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:
 
@@ -63,6 +65,37 @@ $$ SMI = \frac{(NIR + SWIR)}{2} $$
 $$LSTVI = \frac{(Tb - NDVI)}{(Tb + NDVI)} $$ where ( Tb ) is the land surface temperature.
 
 These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
+
+```{r, echo=FALSE}
+library(knitr)
+indices <- data.frame(
+  Index = c("Normalized Difference Vegetation Index (NDVI)", 
+            "Normalized Difference Water Index (NDWI)", 
+            "Normalized Difference Built-up Index (NDBI)", 
+            "Soil Adjusted Vegetation Index (SAVI)", 
+            "Enhanced Vegetation Index (EVI)", 
+            "Soil Moisture Index (SMI)", 
+            "Land Surface Temperature and Vegetation Index (LSTVI)"),
+  Description = c("Used to assess vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance.",
+                  "Utilized to identify water bodies by comparing the difference between green and near-infrared band reflectance.",
+                  "Employed to detect built-up areas by comparing the difference between near-infrared and shortwave infrared band reflectance.",
+                  "Similar to NDVI but adjusts for soil background effects, particularly in areas with sparse vegetation cover.",
+                  "An enhanced version of NDVI that incorporates blue and red-edge bands, providing better sensitivity to high-density vegetation areas.",
+                  "Used to estimate soil moisture content and soil wetness conditions in agricultural and hydrological studies.",
+                  "Combines information from land surface temperature (LST) and vegetation indices to analyze urban heat island effects and land use changes."),
+  Formula = c("$$NDVI= \\frac{NIR-Red}{NIR+Red}$$",
+              "$$NDWI = \\frac{(Green - NIR)}{(Green + NIR)}$$",
+              "$$NDBI = \\frac{(SWIR - NIR)}{(SWIR + NIR)}$$",
+              "$$SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)}$$ where ( L ) is the soil adjustment factor.",
+              "$$EVI = G \\times \\frac{(NIR - Red)}{(NIR + C_1 \\times Red - C_2 \\times Blue + L)}$$ where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment.",
+              "$$SMI = \\frac{(NIR + SWIR)}{2}$$",
+              "$$LSTVI = \\frac{(Tb - NDVI)}{(Tb + NDVI)}$$ where ( Tb ) is the land surface temperature.")
+)
+
+kable(indices, format = "html", escape = FALSE, 
+      col.names = c("Index", "Description", "Formula"),
+      caption = "Summary of Common Remote Sensing Indices")
+```
 
 ## Application
 
