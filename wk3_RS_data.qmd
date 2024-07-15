@@ -40,21 +40,21 @@ Besides NDVI, various other indices are commonly used to extract information abo
 ```{r, echo=FALSE}
 library(knitr)
 indices <- data.frame(
-  Index = c("Normalized Difference Vegetation Index (NDVI)", 
+  Index = c( 
             "Normalized Difference Water Index (NDWI)", 
             "Normalized Difference Built-up Index (NDBI)", 
             "Soil Adjusted Vegetation Index (SAVI)", 
             "Enhanced Vegetation Index (EVI)", 
             "Soil Moisture Index (SMI)", 
             "Land Surface Temperature and Vegetation Index (LSTVI)"),
-  Description = c("Used to assess vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance.",
+  Description = c(
                   "Utilized to identify water bodies by comparing the difference between green and near-infrared band reflectance.",
                   "Employed to detect built-up areas by comparing the difference between near-infrared and shortwave infrared band reflectance.",
                   "Similar to NDVI but adjusts for soil background effects, particularly in areas with sparse vegetation cover.",
                   "An enhanced version of NDVI that incorporates blue and red-edge bands, providing better sensitivity to high-density vegetation areas.",
                   "Used to estimate soil moisture content and soil wetness conditions in agricultural and hydrological studies.",
                   "Combines information from land surface temperature (LST) and vegetation indices to analyze urban heat island effects and land use changes."),
-  Formula = c("$$NDVI= \\frac{NIR-Red}{NIR+Red}$$",
+  Formula = c(
               "$$NDWI = \\frac{(Green - NIR)}{(Green + NIR)}$$",
               "$$NDBI = \\frac{(SWIR - NIR)}{(SWIR + NIR)}$$",
               "$$SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)}$$ where ( L ) is the soil adjustment factor.",
@@ -71,6 +71,10 @@ kable(indices, format = "html", escape = FALSE,
  These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
 
 ## Application
+
+
+
+
 
 ## Reflection
 
