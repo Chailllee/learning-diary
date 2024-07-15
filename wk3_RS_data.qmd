@@ -12,7 +12,9 @@ This lecture mainly provides detailed information on remote sensing cities and e
 
 ## Summary of Common Remote Sensing Indices
 
-The various techniques, including atmosphereic correction and imagery merging, used in remote sensing to enhance and process imagery data share common principles. While they serve different purposes, they share some common principles:
+The various techniques, including atmosphereic correction and imagery merging, used in remote sensing to enhance and process imagery data share common principles. While they serve different purposes[^intro-1], they share some common principles:
+
+[^intro-1]:Lillesand, T.M. & Kiefer, R.W., 1987. *Remote sensing and image interpretation*. 2nd ed1. New York: Wiley. <https://archive.org/details/remotesensingima00lill/page/1/mode/1up>
 
 1.  **Data Transformation**: Most of these techniques involve transforming the raw data to enhance its usability and interpretability. This transformation can be radiometric, spatial, or spectral.
 
@@ -22,11 +24,13 @@ The various techniques, including atmosphereic correction and imagery merging, u
 
 4.  **Improvement of Visualization**: Techniques such as enhancement and filtering are often used to improve the visualization of imagery, making it easier to interpret and analyze.
 
-    [![Remote sensing process and 'Remote Sensing for Earth Observation' book chapters](images/RS_book.png){width="718"}](https://webapps.itc.utwente.nl/librarywww/papers_2009/general/PrinciplesRemoteSensing.pdf)
-<p style="text-align: center; font-size: small;">
-Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapters(Klaus Temfli et al., [2009](https://research.utwente.nl/en/publications/principles-of-remote-sensing-an-introductory-textbook-4))[^intro-1]
-</p>
-[^intro-1]:Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
+![](images/RS_book.png){fig-align="center"}
+
+Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapters(Klaus Temfli et al., [2009](https://research.utwente.nl/en/publications/principles-of-remote-sensing-an-introductory-textbook-4))[^intro-2]
+
+[^intro-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
+
+
 
 In remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:
 
