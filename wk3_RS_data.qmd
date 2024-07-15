@@ -31,11 +31,11 @@ Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapt
 
 [^wk3_rs_data-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
 
-In remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:
 
-
+In remote sensing analysis, the Normalized Difference Vegetation Index (NDVI) is a widely used index for assessing vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance. 
 $$NDVI= \\frac{NIR-Red}{NIR+Red}$$                                                
 
+Besides NDVI, various other indices are commonly used to extract information about land cover and land use, enhancing the overall information derived from remote sensing data. Here is a summary of some common remote sensing indices.
 
 ```{r, echo=FALSE}
 library(knitr)
