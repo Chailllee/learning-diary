@@ -10,7 +10,7 @@ title: "Week3 - Remote Sensing Data"
 This lecture mainly provides detailed information on remote sensing cities and environments, especially on the use and processing of remote sensing data, and introduces the correction methods of remote sensing data, including geometric, atmospheric, orthographic/topographic correction and radiometric correction. Prior to this, data processing is required, including data linking and enhancement such as feathering, image enhancement, and other enhancement techniques. In addition to this, this lesson introduces remote sensing technology, explaining the different types of remote sensing sensors, such as push-sweep and scan sensors, and how they work. Practical Guide: Provides a guide on how to use presentation slides, including the use of search tools and the drawing function on slides.
 :::
 
-## Summary of Common Remote Sensing Indices
+## Summary
 
 The various techniques, including atmosphereic correction and imagery merging, used in remote sensing to enhance and process imagery data share common principles. While they serve different purposes[^wk3_rs_data-1], they share some common principles:
 
@@ -35,36 +35,6 @@ Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapt
 [^wk3_rs_data-2]: Tempfli, K, Huurneman, GC, Bakker, WH, Janssen, LLF, Feringa, WF, Gieske, ASM, Grabmaier, KA, Hecker, CA, Horn, JA, Kerle, N, van der Meer, FD, Parodi, GN, Pohl, C, Reeves, CV, van Ruitenbeek, FJA, Schetselaar, EM, Weir, MJC, Westinga, E & Woldai, T 2009, *Principles of remote sensing: an introductory textbook.* ITC Educational Textbook Series, vol. 2, International Institute for Geo-Information Science and Earth Observation, Enschede. <http://www.itc.nl/library/papers_2009/general/PrinciplesRemoteSensing.pdf>
 
 In remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:
-
-1.  Normalized Difference Vegetation Index (NDVI): Used to assess vegetation health and density by comparing the difference between near-infrared (NIR) and red band reflectance.
-
-$$NDVI= \frac{NIR-Red}{NIR+Red}$$
-
-2.  Normalized Difference Water Index (NDWI): Utilized to identify water bodies by comparing the difference between green and near-infrared band reflectance.
-
-$$NDWI = \frac{(Green - NIR)}{(Green + NIR)}$$
-
-3.  Normalized Difference Built-up Index (NDBI): Employed to detect built-up areas by comparing the difference between near-infrared and shortwave infrared band reflectance.
-
-$$NDBI = \frac{(SWIR - NIR)}{(SWIR + NIR)}$$
-
-4.  Soil Adjusted Vegetation Index (SAVI): Similar to NDVI but adjusts for soil background effects, particularly in areas with sparse vegetation cover.
-
-$$SAVI = \frac{((NIR - Red) \times (1 + L))}{(NIR + Red + L)} $$ where ( L ) is the soil adjustment factor.
-
-5.  Enhanced Vegetation Index (EVI): An enhanced version of NDVI that incorporates blue and red-edge bands, providing better sensitivity to high-density vegetation areas.
-
-$$ EVI = G \times \frac{(NIR - Red)}{(NIR + C_1 \times Red - C_2 \times Blue + L)} $$ where *G* is the gain factor, *C_1* and *C_2* are coefficients, and *L* is the canopy background adjustment.
-
-6.  Soil Moisture Index (SMI): Used to estimate soil moisture content and soil wetness conditions in agricultural and hydrological studies.
-
-$$ SMI = \frac{(NIR + SWIR)}{2} $$
-
-7.  Land Surface Temperature and Vegetation Index (LSTVI): Combines information from land surface temperature (LST) and vegetation indices to analyze urban heat island effects and land use changes.
-
-$$LSTVI = \frac{(Tb - NDVI)}{(Tb + NDVI)} $$ where ( Tb ) is the land surface temperature.
-
-These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
 
 ```{r, echo=FALSE}
 library(knitr)
@@ -96,6 +66,8 @@ kable(indices, format = "html", escape = FALSE,
       col.names = c("Index", "Description", "Formula"),
       caption = "Summary of Common Remote Sensing Indices")
 ```
+
+These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
 
 ## Application
 
