@@ -34,6 +34,7 @@ Remote sensing process and ‘Remote Sensing for Earth Observation’ book chapt
 In remote sensing analysis, various indices are commonly used to extract information about land cover and land use. Here is a summary of some common remote sensing indices:
 
 
+$$NDVI= \\frac{NIR-Red}{NIR+Red}$$                                                
 
 
 ```{r, echo=FALSE}
@@ -56,10 +57,10 @@ indices <- data.frame(
   Formula = c("$$NDVI= \\frac{NIR-Red}{NIR+Red}$$",
               "$$NDWI = \\frac{(Green - NIR)}{(Green + NIR)}$$",
               "$$NDBI = \\frac{(SWIR - NIR)}{(SWIR + NIR)}$$",
-              "$$SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)}$$",
-              "$$EVI = G \\times \\frac{(NIR - Red)}{(NIR + C_1 \\times Red - C_2 \\times Blue + L)}$$",
+              "$$SAVI = \\frac{((NIR - Red) \\times (1 + L))}{(NIR + Red + L)}$$ where ( L ) is the soil adjustment factor.",
+              "$$EVI = G \\times \\frac{(NIR - Red)}{(NIR + C_1 \\times Red - C_2 \\times Blue + L)}$$ where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment.",
               "$$SMI = \\frac{(NIR + SWIR)}{2}$$",
-              "$$LSTVI = \\frac{(Tb - NDVI)}{(Tb + NDVI)}$$")
+              "$$LSTVI = \\frac{(Tb - NDVI)}{(Tb + NDVI)}$$ where ( Tb ) is the land surface temperature.")
 )
 
 kable(indices, format = "html", escape = FALSE, 
@@ -67,7 +68,7 @@ kable(indices, format = "html", escape = FALSE,
       caption = "Summary of Common Remote Sensing Indices")
 ```
 
-where G is the gain factor, C_1 and C_2 are coefficients, and L is the canopy background adjustment. where ( L ) is the soil adjustment factor. where ( Tb ) is the land surface temperature. These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
+ These indices play crucial roles in various applications such as land cover classification, vegetation monitoring, and environmental assessments.
 
 ## Application
 
